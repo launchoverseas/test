@@ -113,12 +113,24 @@
     if (!textSpan) return;
 
     const originalText = textSpan.textContent;
-    const isZh = document.documentElement.lang.includes('zh');
+    const htmlLang = document.documentElement.lang.toLowerCase();
     
     if (success) {
-      textSpan.textContent = isZh ? '已複製' : 'Copied';
+      if (htmlLang.includes('zh-cn') || htmlLang.includes('zh-hans')) {
+        textSpan.textContent = '已复制';
+      } else if (htmlLang.includes('zh')) {
+        textSpan.textContent = '已複製';
+      } else {
+        textSpan.textContent = 'Copied';
+      }
     } else {
-      textSpan.textContent = isZh ? '失敗' : 'Failed';
+      if (htmlLang.includes('zh-cn') || htmlLang.includes('zh-hans')) {
+        textSpan.textContent = '失败';
+      } else if (htmlLang.includes('zh')) {
+        textSpan.textContent = '失敗';
+      } else {
+        textSpan.textContent = 'Failed';
+      }
     }
 
     setTimeout(function () {

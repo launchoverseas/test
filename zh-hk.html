@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1B56C7">
   <title>領海品牌管理有限公司 | 全球品牌管理與跨國分銷諮詢</title>
   <meta name="description" content="立足香港國際貿易樞紐，對標香港貿發局出海專業服務體系，為出海消費品牌提供北美、歐洲、日韓及東南亞市場的頂層戰略、渠道分銷、整合營銷與檢測合規服務。">
   <link rel="canonical" href="https://launchoverseas.com/zh-hk.html">
   <link rel="alternate" hreflang="en" href="https://launchoverseas.com/">
   <link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/zh-hk.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/zh-cn.html">
   <link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/">
 
   <!-- Open Graph -->
@@ -17,8 +19,10 @@
   <meta property="og:description" content="依託香港健全法規與自貿港物流，全面化解消費品牌出海合規風險、渠道壁壘與運營阻力。">
   <meta property="og:url" content="https://launchoverseas.com/zh-hk.html">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -29,7 +33,7 @@
         "@type": "Corporation",
         "@id": "https://launchoverseas.com/zh-hk.html#corporation",
         "name": "領海品牌管理有限公司",
-        "alternateName": "Launch Overseas Limited",
+        "alternateName": ["Launch Overseas Limited", "领海品牌管理有限公司"],
         "url": "https://launchoverseas.com/zh-hk.html",
         "description": "立足香港特別行政區的全球品牌管理與跨國分銷諮詢機構。",
         "knowsAbout": [
@@ -48,7 +52,7 @@
           "@type": "ContactPoint",
           "contactType": "企業合作諮詢",
           "email": "contact@launchoverseas.com",
-          "availableLanguage": ["zh-Hant", "en"]
+          "availableLanguage": ["zh-Hant", "en", "zh-Hans"]
         }
       },
       {
@@ -98,15 +102,13 @@
   <header class="site-header" id="site-header">
     <div class="container header-container">
       <a href="zh-hk.html" class="brand-lockup" aria-label="領海品牌管理有限公司 首頁">
-        <svg class="brand-logo-svg" viewBox="0 0 36 36" width="28" height="28" aria-hidden="true">
-          <rect width="36" height="36" rx="3" fill="#1B2A4A" />
-          <path d="M7 25L18 10L29 25" stroke="#F7F6F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-          <line x1="10" y1="21" x2="26" y2="21" stroke="#F7F6F2" stroke-width="1.8" stroke-linecap="round" />
-          <circle cx="18" cy="17" r="2.2" fill="#A33A31" />
+        <svg class="brand-logo-svg" viewBox="270 85 260 225" width="30" height="26" aria-hidden="true">
+          <path d="M 400 95 L 518 262 L 468 262 L 400 165 L 332 262 L 282 262 Z" fill="#3B7EF6"/>
+          <polygon points="328,270 472,270 494,300 306,300" fill="#1B56C7"/>
         </svg>
         <span class="brand-names">
           <span class="brand-primary">領海品牌管理</span>
-          <span class="brand-secondary">Launch Overseas</span>
+          <span class="brand-secondary">LAUNCH OVERSEAS</span>
         </span>
       </a>
 
@@ -123,8 +125,8 @@
       <div class="header-actions">
         <div class="lang-switch" role="group" aria-label="語言切換">
           <a href="index.html" class="lang-pill" hreflang="en">EN</a>
-          <span class="lang-separator">/</span>
-          <span class="lang-pill active">繁中</span>
+          <span class="lang-pill active">繁</span>
+          <a href="zh-cn.html" class="lang-pill" hreflang="zh-CN">简</a>
         </div>
         <a href="#contact" class="btn btn-primary nav-cta">諮詢對接</a>
         <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="切換選單">
@@ -146,17 +148,18 @@
           <li><a href="#contact" class="mobile-link mobile-cta-link">預約諮詢</a></li>
         </ul>
         <div class="mobile-menu-footer">
-          <span class="mobile-locale-label">語言版本:</span>
-          <a href="index.html" class="lang-pill">English</a>
-          <span class="lang-separator">|</span>
-          <span class="lang-pill active">繁體中文</span>
+          <div class="mobile-lang-row">
+            <a href="index.html" class="lang-pill">English</a>
+            <span class="lang-pill active">繁體中文</span>
+            <a href="zh-cn.html" class="lang-pill">简体中文</a>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Section 2: Hero Section -->
+    <!-- Hero Section -->
     <section class="hero-section">
       <div class="container hero-grid">
         <div class="hero-content">
@@ -177,7 +180,6 @@
           </div>
         </div>
 
-        <!-- Metric Grid Visual -->
         <div class="hero-visual">
           <div class="hub-matrix-header">
             <div class="hub-badge-wrap">
@@ -221,7 +223,7 @@
       </div>
     </section>
 
-    <!-- Section 3: Hong Kong Strategic Gateway -->
+    <!-- Hong Kong Strategic Gateway -->
     <section class="gateway-section" id="jurisdiction">
       <div class="container">
         <div class="section-header">
@@ -251,7 +253,7 @@
       </div>
     </section>
 
-    <!-- Section 4: Target Enterprise Profiles (HKTDC GoGlobal Aligned) -->
+    <!-- Target Enterprise Profiles -->
     <section class="profiles-section" id="profiles">
       <div class="container">
         <div class="section-header">
@@ -281,7 +283,7 @@
       </div>
     </section>
 
-    <!-- Section 5: The 4 Core Service Pillars -->
+    <!-- 4 Core Service Pillars -->
     <section class="pillars-section" id="capabilities">
       <div class="container">
         <div class="section-header">
@@ -290,86 +292,58 @@
         </div>
 
         <div class="card-grid two-col">
-          <!-- Pillar 1 -->
           <article class="pillar-card">
             <div class="pillar-header">
               <span class="pillar-tag">板塊 01</span>
               <h3 class="pillar-title">頂層戰略與出海市場孵化</h3>
             </div>
             <ul class="pillar-list">
-              <li>
-                <strong>市場准入與消費者洞察:</strong> 深度調研目標市場空白、定價結構與消費者購買決策路徑。
-              </li>
-              <li>
-                <strong>產品本土化定位:</strong> 調整產品核心賣點、配方適配性及包裝規範，精準匹配目標市場審美。
-              </li>
-              <li>
-                <strong>拓展策略與渠道規劃:</strong> 制定分階段全球落地藍圖，嚴格控制前期試錯成本與資本支出。
-              </li>
+              <li><strong>市場准入與消費者洞察:</strong> 深度調研目標市場空白、定價結構與消費者購買決策路徑。</li>
+              <li><strong>產品本土化定位:</strong> 調整產品核心賣點、配方適配性及包裝規範，精準匹配目標市場審美。</li>
+              <li><strong>拓展策略與渠道規劃:</strong> 制定分階段全球落地藍圖，嚴格控制前期試錯成本與資本支出。</li>
             </ul>
           </article>
 
-          <!-- Pillar 2 -->
           <article class="pillar-card">
             <div class="pillar-header">
               <span class="pillar-tag">板塊 02</span>
               <h3 class="pillar-title">線下零售與線上電商全渠道分銷</h3>
             </div>
             <ul class="pillar-list">
-              <li>
-                <strong>獨立站與主流電商運營:</strong> 搭建並運營官方本土化獨立站，全面負責 Amazon 等主流電商平台精細化運營。
-              </li>
-              <li>
-                <strong>線下實體渠道進駐:</strong> 對接海外大型商超、高端連鎖百貨及美妝個護專賣店，實現線下規模化鋪貨。
-              </li>
-              <li>
-                <strong>全渠道庫存與訂單管理:</strong> 線上線下庫存統一調配與數據反饋，保障現貨率與履約效率。
-              </li>
+              <li><strong>獨立站與主流電商運營:</strong> 搭建並運營官方本土化獨立站，全面負責 Amazon 等主流電商平台精細化運營。</li>
+              <li><strong>線下實體渠道進駐:</strong> 對接海外大型商超、高端連鎖百貨及美妝個護專賣店，實現線下規模化鋪貨。</li>
+              <li><strong>全渠道庫存與訂單管理:</strong> 線上線下庫存統一調配與數據反饋，保障現貨率與履約效率。</li>
             </ul>
           </article>
 
-          <!-- Pillar 3 -->
           <article class="pillar-card">
             <div class="pillar-header">
               <span class="pillar-tag">板塊 03</span>
               <h3 class="pillar-title">國際品牌管理、本土化行銷與海外公關</h3>
             </div>
             <ul class="pillar-list">
-              <li>
-                <strong>海外主流媒體公關:</strong> 聯絡海外權威商業與行業媒體進行深度報道，構築國際品牌公信力。
-              </li>
-              <li>
-                <strong>本土創作者與 KOL 合作:</strong> 批量對接歐美及亞洲本土優質創作者進行產品試用、開箱測評與口碑傳播。
-              </li>
-              <li>
-                <strong>跨界聯名與品牌活動:</strong> 策劃跨界 IP 合作、快閃店及線下體驗活動，持續提升品牌溢價能力。
-              </li>
+              <li><strong>海外主流媒體公關:</strong> 聯絡海外權威商業與行業媒體進行深度報道，構築國際品牌公信力。</li>
+              <li><strong>本土創作者與 KOL 合作:</strong> 批量對接歐美及亞洲本土優質創作者進行產品試用、開箱測評與口碑傳播。</li>
+              <li><strong>跨界聯名與品牌活動:</strong> 策劃跨界 IP 合作、快閃店及線下體驗活動，持續提升品牌溢價能力。</li>
             </ul>
           </article>
 
-          <!-- Pillar 4 -->
           <article class="pillar-card">
             <div class="pillar-header">
               <span class="pillar-tag">板塊 04</span>
               <h3 class="pillar-title">國際檢測認證、自貿港供應鏈與跨境法規</h3>
             </div>
             <ul class="pillar-list">
-              <li>
-                <strong>產品法規與資質認證:</strong> 辦理美國 FDA、歐盟 CPNP 註冊備案、實驗室成分安全性檢測與本土標籤審核。
-              </li>
-              <li>
-                <strong>跨境物流與海外倉儲:</strong> 提供香港自由港貨物集結、海空幹線運輸、海外倉配及售後退換貨支持。
-              </li>
-              <li>
-                <strong>國際商標與財稅合規:</strong> 全球商標註冊佈局、專利申請、轉移定價與跨境稅務合規法律支持。
-              </li>
+              <li><strong>產品法規與資質認證:</strong> 辦理美國 FDA、歐盟 CPNP 註冊備案、實驗室成分安全性檢測與本土標籤審核。</li>
+              <li><strong>跨境物流與海外倉儲:</strong> 提供香港自由港貨物集結、海空幹線運輸、海外倉配及售後退換貨支持。</li>
+              <li><strong>國際商標與財稅合規:</strong> 全球商標註冊佈局、專利申請、轉移定價與跨境稅務合規法律支持。</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Section 6: Commercial Engagement Models -->
+    <!-- Commercial Engagement Models -->
     <section class="models-section" id="models">
       <div class="container">
         <div class="section-header">
@@ -418,7 +392,7 @@
       </div>
     </section>
 
-    <!-- Section 7: Generative Search & FAQ Module -->
+    <!-- FAQ Module -->
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="section-header">
@@ -450,7 +424,7 @@
       </div>
     </section>
 
-    <!-- Section 8: Inbound Enterprise Lead Capture -->
+    <!-- Inbound Enterprise Lead Capture -->
     <section class="contact-section" id="contact">
       <div class="container">
         <div class="contact-card">
@@ -500,20 +474,18 @@
     </section>
   </main>
 
-  <!-- Section 9: Minimalist Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
         <div class="footer-brand-lockup">
-          <svg class="footer-logo-svg" viewBox="0 0 36 36" width="22" height="22" aria-hidden="true">
-            <rect width="36" height="36" rx="3" fill="#1B2A4A" />
-            <path d="M7 25L18 10L29 25" stroke="#F7F6F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-            <line x1="10" y1="21" x2="26" y2="21" stroke="#F7F6F2" stroke-width="1.8" stroke-linecap="round" />
-            <circle cx="18" cy="17" r="2.2" fill="#A33A31" />
+          <svg class="footer-logo-svg" viewBox="270 85 260 225" width="26" height="22" aria-hidden="true">
+            <path d="M 400 95 L 518 262 L 468 262 L 400 165 L 332 262 L 282 262 Z" fill="#3B7EF6"/>
+            <polygon points="328,270 472,270 494,300 306,300" fill="#1B56C7"/>
           </svg>
           <div>
             <div class="footer-brand">領海品牌管理有限公司</div>
-            <div class="footer-brand-en">Launch Overseas Limited</div>
+            <div class="footer-brand-en">LAUNCH OVERSEAS LIMITED</div>
           </div>
         </div>
         <p class="footer-sub">香港特別行政區註冊機構</p>
@@ -535,7 +507,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="js/app.js"></script>
 </body>
 </html>
