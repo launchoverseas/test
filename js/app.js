@@ -1,7 +1,7 @@
 /**
  * Launch Overseas Limited - Client-Side Controller
  * Handles mobile drawer interaction, scroll behaviors, and one-click copying.
- * Lines: < 150 (Strictly < 300 Limit)
+ * Lines: < 160 (Strictly < 300 Limit)
  */
 
 (function () {

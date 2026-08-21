@@ -90,10 +90,17 @@
   <!-- Header / Navigation -->
   <header class="site-header" id="site-header">
     <div class="container header-container">
-      <a href="zh-hk.html" class="brand-wordmark" aria-label="領海品牌管理有限公司 首頁">
-        <span class="wordmark-en">Launch Overseas Limited</span>
-        <span class="wordmark-divider">|</span>
-        <span class="wordmark-zh">領海品牌管理</span>
+      <a href="zh-hk.html" class="brand-lockup" aria-label="領海品牌管理有限公司 首頁">
+        <svg class="brand-logo-svg" viewBox="0 0 36 36" width="28" height="28" aria-hidden="true">
+          <rect width="36" height="36" rx="3" fill="#1B2A4A" />
+          <path d="M7 25L18 10L29 25" stroke="#F7F6F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <line x1="10" y1="21" x2="26" y2="21" stroke="#F7F6F2" stroke-width="1.8" stroke-linecap="round" />
+          <circle cx="18" cy="17" r="2.2" fill="#A33A31" />
+        </svg>
+        <span class="brand-names">
+          <span class="brand-primary">領海品牌管理</span>
+          <span class="brand-secondary">Launch Overseas</span>
+        </span>
       </a>
 
       <nav class="desktop-nav" aria-label="主導航">
@@ -161,22 +168,45 @@
           </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hub-diagram">
-            <div class="hub-center">
-              <span class="hub-code">HKG</span>
-              <span class="hub-label">香港核心樞紐</span>
+        <!-- Metric Grid Visual -->
+        <div class="hero-visual">
+          <div class="hub-matrix-header">
+            <div class="hub-badge-wrap">
+              <span class="hub-tag">戰略核心樞紐</span>
+              <span class="hub-location">香港特別行政區</span>
             </div>
-            <div class="hub-node node-na">北美地區</div>
-            <div class="hub-node node-eu">歐洲地區</div>
-            <div class="hub-node node-ea">東亞市場</div>
-            <div class="hub-node node-sea">東南亞市場</div>
-            <svg class="hub-connectors" viewBox="0 0 400 300">
-              <line x1="200" y1="150" x2="80" y2="60" class="hub-line" />
-              <line x1="200" y1="150" x2="320" y2="60" class="hub-line" />
-              <line x1="200" y1="150" x2="80" y2="240" class="hub-line" />
-              <line x1="200" y1="150" x2="320" y2="240" class="hub-line" />
-            </svg>
+            <span class="hub-law-label">國際普通法體系</span>
+          </div>
+          
+          <div class="matrix-grid">
+            <div class="matrix-tile">
+              <div class="tile-region">北美地區</div>
+              <div class="tile-stat">美國 FDA 與連鎖商超</div>
+              <div class="tile-desc">對接全美實體零售網絡與 Amazon 旗艦店精細化運營。</div>
+            </div>
+
+            <div class="matrix-tile">
+              <div class="tile-region">歐洲市場</div>
+              <div class="tile-stat">歐盟 CPNP 與英國</div>
+              <div class="tile-desc">辦理產品實驗室毒理評估、責任人備案與本土媒體公關。</div>
+            </div>
+
+            <div class="matrix-tile">
+              <div class="tile-region">日韓東亞</div>
+              <div class="tile-stat">日韓美妝個護專賣</div>
+              <div class="tile-desc">把控當地配方合規與審美標準，精準入駐美妝連鎖門店。</div>
+            </div>
+
+            <div class="matrix-tile">
+              <div class="tile-region">東南亞市場</div>
+              <div class="tile-stat">自貿港集結樞紐</div>
+              <div class="tile-desc">香港免稅倉儲 staging，無縫鏈接東南亞高速增長電商平台。</div>
+            </div>
+          </div>
+
+          <div class="hub-matrix-footer">
+            <span class="footer-indicator"></span>
+            <span>無外匯管制 • 自由多幣種跨境利潤結算</span>
           </div>
         </div>
       </div>
@@ -409,7 +439,7 @@
           <div class="contact-channels">
             <div class="channel-box">
               <span class="channel-label">官方諮詢信箱</span>
-              <a href="mailto:contact@launchoverseas.com?subject=%E5%93%81%E7%89%8C%E5%87%BA%E6%B5%B7%E6%88%B0%E7%95%A5%E5%92%A8%E8%A9%A2%20-%20%E9%A0%98%E6%5C%B7%E5%93%81%E7%89%8C" class="channel-value email-link">contact@launchoverseas.com</a>
+              <a href="mailto:contact@launchoverseas.com?subject=%E5%93%81%E7%89%8C%E5%87%BA%E6%B5%B7%E6%88%B0%E7%95%A5%E5%92%A8%E8%A9%A2%20-%20%E9%A0%98%E6%B5%B7%E5%93%81%E7%89%8C" class="channel-value email-link">contact@launchoverseas.com</a>
               <button class="copy-btn" data-copy="contact@launchoverseas.com" aria-label="複製電子郵箱">
                 <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 <span>複製</span>
@@ -435,8 +465,18 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
-        <div class="footer-brand">領海品牌管理有限公司</div>
-        <div class="footer-brand-en">Launch Overseas Limited</div>
+        <div class="footer-brand-lockup">
+          <svg class="footer-logo-svg" viewBox="0 0 36 36" width="22" height="22" aria-hidden="true">
+            <rect width="36" height="36" rx="3" fill="#1B2A4A" />
+            <path d="M7 25L18 10L29 25" stroke="#F7F6F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <line x1="10" y1="21" x2="26" y2="21" stroke="#F7F6F2" stroke-width="1.8" stroke-linecap="round" />
+            <circle cx="18" cy="17" r="2.2" fill="#A33A31" />
+          </svg>
+          <div>
+            <div class="footer-brand">領海品牌管理有限公司</div>
+            <div class="footer-brand-en">Launch Overseas Limited</div>
+          </div>
+        </div>
         <p class="footer-sub">香港特別行政區註冊機構</p>
       </div>
 

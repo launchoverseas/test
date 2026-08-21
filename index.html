@@ -90,10 +90,17 @@
   <!-- Header / Navigation -->
   <header class="site-header" id="site-header">
     <div class="container header-container">
-      <a href="index.html" class="brand-wordmark" aria-label="Launch Overseas Limited Home">
-        <span class="wordmark-en">Launch Overseas Limited</span>
-        <span class="wordmark-divider">|</span>
-        <span class="wordmark-zh">領海品牌管理</span>
+      <a href="index.html" class="brand-lockup" aria-label="Launch Overseas Limited Home">
+        <svg class="brand-logo-svg" viewBox="0 0 36 36" width="28" height="28" aria-hidden="true">
+          <rect width="36" height="36" rx="3" fill="#1B2A4A" />
+          <path d="M7 25L18 10L29 25" stroke="#F7F6F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+          <line x1="10" y1="21" x2="26" y2="21" stroke="#F7F6F2" stroke-width="1.8" stroke-linecap="round" />
+          <circle cx="18" cy="17" r="2.2" fill="#A33A31" />
+        </svg>
+        <span class="brand-names">
+          <span class="brand-primary">Launch Overseas</span>
+          <span class="brand-secondary">Limited</span>
+        </span>
       </a>
 
       <nav class="desktop-nav" aria-label="Main Navigation">
@@ -161,22 +168,45 @@
           </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hub-diagram">
-            <div class="hub-center">
-              <span class="hub-code">HKG</span>
-              <span class="hub-label">Hong Kong SAR Hub</span>
+        <!-- Metric Grid Visual -->
+        <div class="hero-visual">
+          <div class="hub-matrix-header">
+            <div class="hub-badge-wrap">
+              <span class="hub-tag">Strategic Hub</span>
+              <span class="hub-location">Hong Kong SAR</span>
             </div>
-            <div class="hub-node node-na">North America</div>
-            <div class="hub-node node-eu">Europe</div>
-            <div class="hub-node node-ea">East Asia</div>
-            <div class="hub-node node-sea">Southeast Asia</div>
-            <svg class="hub-connectors" viewBox="0 0 400 300">
-              <line x1="200" y1="150" x2="80" y2="60" class="hub-line" />
-              <line x1="200" y1="150" x2="320" y2="60" class="hub-line" />
-              <line x1="200" y1="150" x2="80" y2="240" class="hub-line" />
-              <line x1="200" y1="150" x2="320" y2="240" class="hub-line" />
-            </svg>
+            <span class="hub-law-label">Common-Law Jurisdiction</span>
+          </div>
+          
+          <div class="matrix-grid">
+            <div class="matrix-tile">
+              <div class="tile-region">North America</div>
+              <div class="tile-stat">US FDA & Retail</div>
+              <div class="tile-desc">Direct national chain door pitching & Tier-1 Amazon management.</div>
+            </div>
+
+            <div class="matrix-tile">
+              <div class="tile-region">Europe</div>
+              <div class="tile-stat">EU CPNP & UK</div>
+              <div class="tile-desc">Full toxicology dossiers, responsible person filings & localized PR.</div>
+            </div>
+
+            <div class="matrix-tile">
+              <div class="tile-region">East Asia</div>
+              <div class="tile-stat">Japan & Korea</div>
+              <div class="tile-desc">Specialty channel accounts & Japanese consumer formulation audits.</div>
+            </div>
+
+            <div class="matrix-tile">
+              <div class="tile-region">Southeast Asia</div>
+              <div class="tile-stat">ASEAN Gateway</div>
+              <div class="tile-desc">Consolidated cross-border customs & high-growth marketplace operations.</div>
+            </div>
+          </div>
+
+          <div class="hub-matrix-footer">
+            <span class="footer-indicator"></span>
+            <span>Zero foreign exchange restrictions • Direct multi-currency treasury settlement</span>
           </div>
         </div>
       </div>
@@ -435,8 +465,18 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
-        <div class="footer-brand">Launch Overseas Limited</div>
-        <div class="footer-brand-zh">領海品牌管理有限公司</div>
+        <div class="footer-brand-lockup">
+          <svg class="footer-logo-svg" viewBox="0 0 36 36" width="22" height="22" aria-hidden="true">
+            <rect width="36" height="36" rx="3" fill="#1B2A4A" />
+            <path d="M7 25L18 10L29 25" stroke="#F7F6F2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <line x1="10" y1="21" x2="26" y2="21" stroke="#F7F6F2" stroke-width="1.8" stroke-linecap="round" />
+            <circle cx="18" cy="17" r="2.2" fill="#A33A31" />
+          </svg>
+          <div>
+            <div class="footer-brand">Launch Overseas Limited</div>
+            <div class="footer-brand-zh">領海品牌管理有限公司</div>
+          </div>
+        </div>
         <p class="footer-sub">Registered in Hong Kong SAR</p>
       </div>
 
