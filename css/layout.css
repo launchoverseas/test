@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-stone);
@@ -82,7 +82,7 @@
   flex-shrink: 0;
 }
 
-/* 3-Language Segmented Switcher */
+/* 3-Language Segmented Switcher (Desktop) */
 .lang-switch {
   display: inline-flex;
   align-items: center;
@@ -132,7 +132,7 @@
 
 .mobile-toggle .bar {
   display: block;
-  width: 20px;
+  width: 22px;
   height: 2px;
   background-color: var(--text-primary);
   transition: transform var(--transition-smooth), opacity var(--transition-smooth);
@@ -267,16 +267,13 @@
     padding: 0 16px;
   }
 
-  .desktop-nav, .nav-cta, .brand-secondary {
+  /* Clean Mobile Header: Hide desktop nav, Inquire CTA, and top switcher */
+  .desktop-nav, .nav-cta, .brand-secondary, .lang-switch {
     display: none;
   }
 
   .brand-primary {
     font-size: 0.9375rem;
-  }
-
-  .header-actions {
-    gap: 8px;
   }
 
   .mobile-toggle {
@@ -287,7 +284,7 @@
     font-size: 1.5rem;
   }
 
-  /* Mobile Drawer */
+  /* Mobile Drawer Overlay */
   .mobile-menu {
     display: block;
     position: fixed;
@@ -311,22 +308,23 @@
   }
 
   .mobile-menu-inner {
-    padding: 32px 20px;
+    padding: 28px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    overflow-y: auto;
   }
 
   .mobile-nav-links {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
   }
 
   .mobile-nav-links a {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--text-primary);
   }
@@ -336,18 +334,40 @@
     font-weight: 700;
   }
 
+  /* Language Switcher inside Mobile Drawer */
   .mobile-menu-footer {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding-top: 20px;
     border-top: 1px solid var(--border-stone);
-    font-size: 0.875rem;
+  }
+
+  .mobile-lang-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    font-weight: 700;
   }
 
   .mobile-lang-row {
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+
+  .mobile-lang-row .lang-pill {
+    flex: 1;
+    min-height: 40px;
+    font-size: 0.875rem;
+    background-color: var(--bg-canvas);
+    border: 1px solid var(--border-stone);
+  }
+
+  .mobile-lang-row .lang-pill.active {
+    background-color: var(--color-indigo);
+    color: #FFFFFF;
+    border-color: var(--color-indigo);
   }
 }

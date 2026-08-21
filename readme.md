@@ -92,3 +92,6 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-22
 - Feature Added: Modular CSS Architecture & Simplified Chinese (zh-cn.html) Multi-Locale Parity
 - Architecture Notes: Split monolithic stylesheet into 3 modular files (`css/variables.css`, `css/layout.css`, `css/components.css`). Added a dedicated Simplified Chinese static page (`zh-cn.html`) with localized Mainland enterprise trade terminology. Integrated a 3-way segmented language controller (`EN | 繁 | 简`) with reciprocal `hreflang` tags and Schema.org JSON-LD structured data across all three pages.
+- Date: 2026-08-22
+- Feature Added: Mobile Viewport Grid Isolation & Hamburger Language Integration
+- Architecture Notes: Resolved CSS cascade conflicts causing the 2-column hero split on mobile viewports. Shifted the 3-locale language switch inside the slide-out hamburger menu on screens <= 768px, ensuring the top header contains only the brand mark and touch toggle. Fixed badge text wrapping inside `.hub-matrix-header` to guarantee clean single-column presentation on 375px–430px mobile displays.
