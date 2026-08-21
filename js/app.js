@@ -1,7 +1,7 @@
 /**
  * Launch Overseas Limited - Client-Side Controller
- * Handles mobile drawer interaction, scroll behaviors, and one-click copying.
- * Lines: < 160 (Strictly < 300 Limit)
+ * Handles mobile drawer, partnership model tabs, scroll behaviors, and one-click copying.
+ * Lines: 214 (< 300 Limit)
  */
 
 (function () {
@@ -13,6 +13,8 @@
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileLinks = document.querySelectorAll('.mobile-link');
   const copyButtons = document.querySelectorAll('.copy-btn');
+  const tabButtons = document.querySelectorAll('.model-tab-btn');
+  const modelPanels = document.querySelectorAll('.model-panel');
 
   /**
    * Initializes mobile navigation drawer toggling
@@ -25,14 +27,12 @@
       setMenuState(!isExpanded);
     });
 
-    // Close menu when clicking on any mobile anchor link
     mobileLinks.forEach(function (link) {
       link.addEventListener('click', function () {
         setMenuState(false);
       });
     });
 
-    // Close on Escape key press
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
         setMenuState(false);
@@ -59,6 +59,40 @@
   }
 
   /**
+   * Initializes interactive partnership model tab switcher
+   */
+  function initModelSwitcher() {
+    if (tabButtons.length === 0 || modelPanels.length === 0) return;
+
+    tabButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const targetPanelId = btn.getAttribute('aria-controls');
+        if (!targetPanelId) return;
+
+        // Reset all tabs
+        tabButtons.forEach(function (t) {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+
+        // Reset all panels
+        modelPanels.forEach(function (panel) {
+          panel.classList.remove('active');
+        });
+
+        // Activate selected tab & panel
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        const activePanel = document.getElementById(targetPanelId);
+        if (activePanel) {
+          activePanel.classList.add('active');
+        }
+      });
+    });
+  }
+
+  /**
    * Handles clipboard copying for corporate contact items
    */
   function initClipboardButtons() {
@@ -72,7 +106,6 @@
             await navigator.clipboard.writeText(textToCopy);
             renderCopyFeedback(btn, true);
           } else {
-            // Fallback for non-https/legacy browser contexts
             fallbackCopyText(textToCopy);
             renderCopyFeedback(btn, true);
           }
@@ -155,6 +188,7 @@
   // Initialization lifecycle
   document.addEventListener('DOMContentLoaded', function () {
     initMobileMenu();
+    initModelSwitcher();
     initClipboardButtons();
     initHeaderScroll();
   });
