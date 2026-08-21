@@ -272,56 +272,157 @@
   font-weight: 600;
 }
 
-/* Comparison Table */
-.table-responsive {
-  width: 100%;
-  overflow-x: auto;
+/* ==========================================================================
+   Interactive Partnership Model Switcher Component
+   ========================================================================== */
+.model-switcher-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.model-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--bg-canvas);
   border: 1px solid var(--border-stone);
   border-radius: 6px;
-  background-color: var(--bg-surface);
+  padding: 4px;
+  gap: 4px;
 }
 
-.matrix-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  font-size: 0.875rem;
-}
-
-.matrix-table th, .matrix-table td {
-  padding: 20px;
-  border-bottom: 1px solid var(--border-stone);
-  border-right: 1px solid var(--border-stone);
-  vertical-align: top;
-}
-
-.matrix-table th:last-child, .matrix-table td:last-child {
-  border-right: none;
-}
-
-.matrix-table thead th {
-  background-color: var(--bg-canvas);
-  font-weight: 700;
-  color: var(--color-indigo);
-  font-size: 0.8125rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.matrix-table tbody th {
-  background-color: var(--bg-canvas);
-  font-weight: 700;
-  width: 18%;
-}
-
-.matrix-table tbody td {
+.model-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
   color: var(--text-secondary);
-  line-height: 1.5;
-  width: 27.33%;
+  cursor: pointer;
+  transition: background-color var(--transition-smooth), color var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
-.matrix-table tr:last-child th, .matrix-table tr:last-child td {
-  border-bottom: none;
+.model-tab-btn:hover {
+  color: var(--color-indigo);
+}
+
+.model-tab-btn.active {
+  background-color: var(--bg-surface);
+  color: var(--color-indigo);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.model-panels {
+  position: relative;
+}
+
+.model-panel {
+  display: none;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 20px -2px rgba(27, 86, 199, 0.05);
+}
+
+.model-panel.active {
+  display: block;
+  animation: panelFadeIn 0.25s ease-in-out;
+}
+
+@keyframes panelFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.panel-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid var(--border-stone);
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+}
+
+.panel-title-wrap {
+  max-width: 680px;
+}
+
+.panel-badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-azure);
+  margin-bottom: 6px;
+}
+
+.panel-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.panel-profile-lead {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
+.panel-profile-lead strong {
+  color: var(--text-primary);
+}
+
+.panel-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.detail-block {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-indigo);
+  margin-bottom: 8px;
+}
+
+.detail-content {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.panel-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-stone);
+}
+
+.panel-action-note {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
 }
 
 /* FAQ Module */
@@ -473,6 +574,15 @@
     grid-template-columns: 1fr;
     gap: 36px;
   }
+
+  .model-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-details-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -487,6 +597,14 @@
 
   .hero-visual {
     padding: 20px 16px;
+  }
+
+  .model-panel {
+    padding: 24px 16px;
+  }
+
+  .panel-title {
+    font-size: 1.25rem;
   }
 
   .contact-card {

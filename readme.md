@@ -95,3 +95,6 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-22
 - Feature Added: Mobile Viewport Grid Isolation & Hamburger Language Integration
 - Architecture Notes: Resolved CSS cascade conflicts causing the 2-column hero split on mobile viewports. Shifted the 3-locale language switch inside the slide-out hamburger menu on screens <= 768px, ensuring the top header contains only the brand mark and touch toggle. Fixed badge text wrapping inside `.hub-matrix-header` to guarantee clean single-column presentation on 375px–430px mobile displays.
+- Date: 2026-08-22
+- Feature Added: Interactive Commercial Model Switcher Component
+- Architecture Notes: Replaced wide comparison table with an accessible, mobile-first 3-way segmented card switcher (`role="tablist"`, `role="tabpanel"`) across all three static pages (`index.html`, `zh-hk.html`, `zh-cn.html`). Expanded `css/components.css` with structured detail blocks (Operational Scope, Commercial Structure, Inventory Title, Channel Coverage) and integrated modular tab switching logic into `js/app.js` (214 lines) while preserving zero-database security and full SEO DOM retention.
