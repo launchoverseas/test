@@ -166,7 +166,7 @@ a {
 .desktop-nav .nav-links {
   display: flex;
   list-style: none;
-  gap: 32px;
+  gap: 28px;
 }
 
 .nav-links a {
@@ -280,7 +280,7 @@ a {
   border-radius: 2px;
 }
 
-/* Hero Matrix Visual (Replacing Map Diagram) */
+/* Hero Matrix Visual */
 .hero-visual {
   background-color: #FFFFFF;
   border: 1px solid var(--border-stone);
@@ -397,7 +397,7 @@ a {
 }
 
 /* Sections */
-.gateway-section, .pillars-section, .models-section, .faq-section, .contact-section {
+.gateway-section, .profiles-section, .pillars-section, .models-section, .faq-section, .contact-section {
   padding: 80px 0;
   border-bottom: 1px solid var(--border-stone);
 }
