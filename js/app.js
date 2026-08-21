@@ -133,9 +133,9 @@
     if (!header) return;
     window.addEventListener('scroll', function () {
       if (window.scrollY > 10) {
-        header.style.borderBottomColor = '#D5D4CD';
+        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
       } else {
-        header.style.borderBottomColor = 'var(--border-stone)';
+        header.style.boxShadow = 'none';
       }
     }, { passive: true });
   }

@@ -1,16 +1,18 @@
 /* ==========================================================================
-   Launch Overseas Limited - Japanese Minimalist Design System
+   Launch Overseas Limited - Enterprise Cobalt Design System
    ========================================================================== */
 
 :root {
-  --bg-canvas: #F7F6F2;
-  --text-primary: #1A1A1A;
-  --text-secondary: #5A5D64;
-  --border-stone: #E5E4DE;
-  --color-indigo: #1B2A4A;
-  --color-indigo-hover: #121c33;
-  --color-vermilion: #A33A31;
-  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang HK", "Microsoft JhengHei", sans-serif;
+  --bg-canvas: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --border-stone: #E2E8F0;
+  --color-indigo: #1B56C7;        /* Primary Royal Cobalt from Logo */
+  --color-indigo-hover: #13429E;
+  --color-azure: #3B7EF6;         /* Vibrant Electric Azure from Logo */
+  --color-azure-light: #EFF6FF;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
   --header-height: 64px;
   --transition-smooth: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -46,8 +48,8 @@ body {
 
 /* Typography Helpers */
 h1, h2, h3, h4 {
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   color: var(--text-primary);
 }
 
@@ -61,9 +63,9 @@ a {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-secondary);
+  color: var(--color-indigo);
   margin-bottom: 12px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Button & Link Component */
@@ -74,10 +76,10 @@ a {
   min-height: 44px;
   padding: 0 24px;
   font-size: 0.9375rem;
-  font-weight: 500;
-  border-radius: 2px;
+  font-weight: 600;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color var(--transition-smooth), opacity var(--transition-smooth);
+  transition: background-color var(--transition-smooth), opacity var(--transition-smooth), transform var(--transition-smooth);
 }
 
 .btn-primary {
@@ -88,6 +90,7 @@ a {
 
 .btn-primary:hover {
   background-color: var(--color-indigo-hover);
+  transform: translateY(-1px);
 }
 
 .btn-link {
@@ -96,7 +99,7 @@ a {
   gap: 8px;
   min-height: 44px;
   font-size: 0.9375rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-indigo);
 }
 
@@ -115,9 +118,9 @@ a {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(247, 246, 242, 0.94);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-stone);
   z-index: 1000;
   padding-top: env(safe-area-inset-top);
@@ -151,16 +154,17 @@ a {
 }
 
 .brand-primary {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--text-primary);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--color-indigo);
 }
 
 .brand-secondary {
   font-size: 0.8125rem;
-  font-weight: 400;
-  color: var(--text-secondary);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-azure);
 }
 
 .desktop-nav .nav-links {
@@ -171,12 +175,13 @@ a {
 
 .nav-links a {
   font-size: 0.875rem;
+  font-weight: 500;
   color: var(--text-secondary);
   transition: color var(--transition-smooth);
 }
 
 .nav-links a:hover {
-  color: var(--text-primary);
+  color: var(--color-indigo);
 }
 
 .header-actions {
@@ -196,13 +201,14 @@ a {
 
 .lang-pill {
   padding: 4px 6px;
-  border-radius: 2px;
+  border-radius: 4px;
+  font-weight: 500;
 }
 
 .lang-pill.active {
   color: var(--color-indigo);
-  font-weight: 600;
-  border-bottom: 2px solid var(--color-vermilion);
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-azure);
 }
 
 .mobile-toggle {
@@ -234,6 +240,7 @@ a {
 /* Hero Section */
 .hero-section {
   padding: 80px 0 64px;
+  background-color: var(--bg-surface);
   border-bottom: 1px solid var(--border-stone);
 }
 
@@ -273,18 +280,21 @@ a {
 
 .region-pill {
   font-size: 0.75rem;
+  font-weight: 600;
   padding: 6px 12px;
-  background-color: #FFFFFF;
-  border: 1px solid var(--border-stone);
-  color: var(--text-secondary);
-  border-radius: 2px;
+  background-color: var(--color-azure-light);
+  border: 1px solid #BFDBFE;
+  color: var(--color-indigo);
+  border-radius: 4px;
 }
 
 /* Hero Matrix Visual */
 .hero-visual {
-  background-color: #FFFFFF;
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-stone);
+  border-radius: 6px;
   padding: 28px;
+  box-shadow: 0 4px 20px -2px rgba(27, 86, 199, 0.05);
 }
 
 .hub-matrix-header {
@@ -306,22 +316,23 @@ a {
   background-color: var(--color-indigo);
   color: #FFFFFF;
   font-size: 0.6875rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 3px 8px;
-  border-radius: 2px;
+  border-radius: 3px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .hub-location {
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
 .hub-law-label {
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  font-weight: 500;
+  color: var(--color-azure);
 }
 
 .matrix-grid {
@@ -334,6 +345,7 @@ a {
 .matrix-tile {
   background-color: var(--bg-canvas);
   border: 1px solid var(--border-stone);
+  border-radius: 4px;
   padding: 16px;
 }
 
@@ -341,14 +353,14 @@ a {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-vermilion);
-  font-weight: 600;
+  color: var(--color-azure);
+  font-weight: 700;
   margin-bottom: 4px;
 }
 
 .tile-stat {
   font-size: 0.9375rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 6px;
 }
@@ -374,7 +386,7 @@ a {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #2e7d32;
+  background-color: #10B981;
   flex-shrink: 0;
 }
 
@@ -417,15 +429,22 @@ a {
 }
 
 .feature-card, .pillar-card {
-  background-color: #FFFFFF;
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-stone);
+  border-radius: 6px;
   padding: 32px;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.feature-card:hover, .pillar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px -4px rgba(27, 86, 199, 0.06);
 }
 
 .card-index {
   font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--color-vermilion);
+  font-weight: 700;
+  color: var(--color-azure);
   margin-bottom: 16px;
 }
 
@@ -453,7 +472,8 @@ a {
   font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--text-secondary);
+  color: var(--color-azure);
+  font-weight: 700;
   margin-bottom: 6px;
 }
 
@@ -484,7 +504,8 @@ a {
   width: 100%;
   overflow-x: auto;
   border: 1px solid var(--border-stone);
-  background-color: #FFFFFF;
+  border-radius: 6px;
+  background-color: var(--bg-surface);
 }
 
 .matrix-table {
@@ -507,8 +528,8 @@ a {
 
 .matrix-table thead th {
   background-color: var(--bg-canvas);
-  font-weight: 600;
-  color: var(--text-primary);
+  font-weight: 700;
+  color: var(--color-indigo);
   font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -516,7 +537,7 @@ a {
 
 .matrix-table tbody th {
   background-color: var(--bg-canvas);
-  font-weight: 600;
+  font-weight: 700;
   width: 18%;
 }
 
@@ -534,12 +555,13 @@ a {
 .faq-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 24px;
 }
 
 .faq-item {
-  background-color: #FFFFFF;
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-stone);
+  border-radius: 6px;
   padding: 28px;
 }
 
@@ -547,6 +569,7 @@ a {
   font-size: 1.0625rem;
   margin-bottom: 12px;
   line-height: 1.4;
+  color: var(--color-indigo);
 }
 
 .faq-answer {
@@ -557,9 +580,11 @@ a {
 
 /* Contact Section */
 .contact-card {
-  background-color: #FFFFFF;
+  background-color: var(--bg-surface);
   border: 1px solid var(--border-stone);
+  border-radius: 8px;
   padding: 48px;
+  box-shadow: 0 4px 24px -2px rgba(27, 86, 199, 0.06);
 }
 
 .contact-header {
@@ -599,9 +624,10 @@ a {
   display: inline-block;
   width: 6px;
   height: 6px;
-  background-color: var(--color-vermilion);
+  background-color: var(--color-azure);
   margin-top: 8px;
   flex-shrink: 0;
+  border-radius: 1px;
 }
 
 .trust-item strong {
@@ -617,6 +643,7 @@ a {
 .channel-box {
   background-color: var(--bg-canvas);
   border: 1px solid var(--border-stone);
+  border-radius: 6px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -627,13 +654,13 @@ a {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--text-secondary);
-  font-weight: 600;
+  color: var(--color-indigo);
+  font-weight: 700;
 }
 
 .channel-value {
   font-size: 0.9375rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-primary);
   word-break: break-all;
 }
@@ -649,25 +676,29 @@ a {
   align-items: center;
   gap: 6px;
   align-self: flex-start;
-  background: #FFFFFF;
+  background: var(--bg-surface);
   border: 1px solid var(--border-stone);
   padding: 4px 10px;
   font-size: 0.75rem;
+  font-weight: 600;
   cursor: pointer;
   color: var(--text-primary);
   margin-top: 4px;
-  border-radius: 2px;
+  border-radius: 4px;
   min-height: 28px;
+  transition: border-color var(--transition-smooth), color var(--transition-smooth);
 }
 
 .copy-btn:hover {
   border-color: var(--color-indigo);
+  color: var(--color-indigo);
 }
 
 /* Minimalist Footer */
 .site-footer {
   padding: 48px 0;
-  background-color: var(--bg-canvas);
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-stone);
 }
 
 .footer-grid {
@@ -687,13 +718,15 @@ a {
 }
 
 .footer-brand {
-  font-weight: 600;
-  color: var(--text-primary);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--color-indigo);
 }
 
 .footer-brand-zh, .footer-brand-en {
   font-size: 0.75rem;
-  color: var(--text-secondary);
+  color: var(--color-azure);
+  font-weight: 600;
 }
 
 .footer-sub {
@@ -794,7 +827,7 @@ a {
     left: 0;
     width: 100%;
     height: calc(100dvh - var(--header-height));
-    background-color: var(--bg-canvas);
+    background-color: var(--bg-surface);
     border-top: 1px solid var(--border-stone);
     transform: translateY(-100%);
     opacity: 0;
@@ -826,13 +859,13 @@ a {
 
   .mobile-nav-links a {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-primary);
   }
 
   .mobile-cta-link {
     color: var(--color-indigo) !important;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .mobile-menu-footer {
