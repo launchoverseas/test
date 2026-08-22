@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1B56C7">
+  <title>Privacy Policy | Launch Overseas Limited</title>
+  <meta name="description" content="Official Privacy Policy and Data Protection Notice for Launch Overseas Limited. Compliant with Hong Kong PDPO, EU GDPR, and international commercial governance.">
+  <link rel="canonical" href="https://launchoverseas.com/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://launchoverseas.com/privacy.html">
+  <link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/privacy-zh-hk.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/privacy-zh-cn.html">
+  <link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/privacy.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Launch Overseas Limited">
+  <meta property="og:title" content="Privacy Policy | Launch Overseas Limited">
+  <meta property="og:description" content="Data governance, commercial confidentiality, and privacy standards of Launch Overseas Limited.">
+  <meta property="og:url" content="https://launchoverseas.com/privacy.html">
+
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy - Launch Overseas Limited",
+    "url": "https://launchoverseas.com/privacy.html",
+    "description": "Privacy policy and personal data protection principles for corporate inquiries.",
+    "publisher": {
+      "@type": "Corporation",
+      "name": "Launch Overseas Limited",
+      "url": "https://launchoverseas.com/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-lockup" aria-label="Launch Overseas Limited Home">
+        <svg class="brand-logo-svg" viewBox="270 85 260 225" width="30" height="26" aria-hidden="true">
+          <path d="M 400 95 L 518 262 L 468 262 L 400 165 L 332 262 L 282 262 Z" fill="#3B7EF6"/>
+          <polygon points="328,270 472,270 494,300 306,300" fill="#1B56C7"/>
+        </svg>
+        <span class="brand-names">
+          <span class="brand-primary">LAUNCH OVERSEAS</span>
+          <span class="brand-secondary">LIMITED</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html#capabilities">Capabilities</a></li>
+          <li><a href="index.html#roadmap">Roadmap</a></li>
+          <li><a href="index.html#playbooks">Playbooks</a></li>
+          <li><a href="index.html#jurisdiction">Jurisdiction</a></li>
+          <li><a href="index.html#models">Engagement Models</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language Switcher">
+          <span class="lang-pill active">EN</span>
+          <a href="privacy-zh-hk.html" class="lang-pill" hreflang="zh-HK">繁</a>
+          <a href="privacy-zh-cn.html" class="lang-pill" hreflang="zh-CN">简</a>
+        </div>
+        <a href="index.html#contact" class="btn btn-primary nav-cta">Inquire</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html#capabilities" class="mobile-link">Capabilities</a></li>
+          <li><a href="index.html#roadmap" class="mobile-link">Roadmap</a></li>
+          <li><a href="index.html#playbooks" class="mobile-link">Category Playbooks</a></li>
+          <li><a href="index.html#jurisdiction" class="mobile-link">Jurisdiction</a></li>
+          <li><a href="index.html#models" class="mobile-link">Engagement Models</a></li>
+          <li><a href="index.html#contact" class="mobile-link mobile-cta-link">Initiate Inquiry</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <span class="mobile-lang-title">Language / 語言 / 语言</span>
+          <div class="mobile-lang-row">
+            <span class="lang-pill active">English</span>
+            <a href="privacy-zh-hk.html" class="lang-pill">繁體中文</a>
+            <a href="privacy-zh-cn.html" class="lang-pill">简体中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="gateway-section">
+      <div class="container" style="max-width: 860px;">
+        <div class="section-header" style="margin-bottom: 32px;">
+          <div class="meta-tag">Corporate Governance & Compliance</div>
+          <h1 class="section-title">Privacy Policy & Data Protection Notice</h1>
+          <p class="section-definition">Effective Date: August 22, 2026. This policy outlines how Launch Overseas Limited ("we", "us", or "our"), registered in the Hong Kong Special Administrative Region, manages and protects commercial inquiry data in compliance with the Personal Data (Privacy) Ordinance (PDPO) of Hong Kong and international commercial standards including EU/UK GDPR.</p>
+        </div>
+
+        <article class="feature-card" style="margin-bottom: 24px;">
+          <div class="card-index">01. Scope & Core Principles</div>
+          <h2 class="card-title">Institutional B2B Data Handling</h2>
+          <p class="card-desc">Launch Overseas Limited operates strictly as a commercial corporate consultancy. We do not engage in mass consumer behavioral profiling or consumer list sales. All information submitted to us is treated under strict commercial confidence and handled exclusively for evaluating cross-border market expansion partnerships.</p>
+        </article>
+
+        <article class="feature-card" style="margin-bottom: 24px;">
+          <div class="card-index">02. Data Collected & Methods</div>
+          <h2 class="card-title">Types of Information Processed</h2>
+          <p class="card-desc">We only collect data voluntarily transmitted by enterprise representatives via direct corporate email or official instant advisory channels (WhatsApp). This includes:</p>
+          <ul class="pillar-list" style="margin-top: 16px;">
+            <li><strong>Corporate Representative Details:</strong> Name, professional title, and corporate email address.</li>
+            <li><strong>Enterprise Information:</strong> Brand name, country of incorporation, website URL, and primary consumer product categories.</li>
+            <li><strong>Expansion Specifications:</strong> Target geographic territories (North America, Europe, East Asia, Southeast Asia) and requested engagement model scope.</li>
+          </ul>
+        </article>
+
+        <article class="feature-card" style="margin-bottom: 24px;">
+          <div class="card-index">03. Tracking & Technical Architecture</div>
+          <h2 class="card-title">Zero-Tracker & Zero-Cookie Policy</h2>
+          <p class="card-desc">Our public website is built on a clean, static, zero-database architecture. We do not deploy third-party advertising trackers, cross-site behavioral cookies, or fingerprinting scripts. Browser local interactions (such as tab toggling and locale preferences) remain entirely client-side without external telemetry.</p>
+        </article>
+
+        <article class="feature-card" style="margin-bottom: 24px;">
+          <div class="card-index">04. Commercial Confidentiality & Mutual NDA</div>
+          <h2 class="card-title">Enterprise Confidentiality Commitment</h2>
+          <p class="card-desc">We recognize the sensitive commercial nature of formula audits, pricing models, and international expansion roadmaps. Prior to exchanging detailed product dossiers or regulatory records, we routinely execute bilateral Mutual Non-Disclosure Agreements (NDA) governed under Hong Kong common law.</p>
+        </article>
+
+        <article class="feature-card" style="margin-bottom: 24px;">
+          <div class="card-index">05. Data Subject Rights & Inquiries</div>
+          <h2 class="card-title">Access, Rectification & Data Purging</h2>
+          <p class="card-desc">In accordance with the Hong Kong PDPO and applicable international regulations, corporate representatives maintain the right to inspect, update, or request the immediate permanent deletion of their communication records. Inquiries should be addressed directly to our data compliance officer:</p>
+          <div class="hub-matrix-footer" style="margin-top: 16px; padding-top: 12px;">
+            <span class="footer-indicator"></span>
+            <span>Official Inquiries: <strong>contact@launchoverseas.com</strong> (Subject: Data Compliance Request)</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand-lockup">
+          <svg class="footer-logo-svg" viewBox="270 85 260 225" width="26" height="22" aria-hidden="true">
+            <path d="M 400 95 L 518 262 L 468 262 L 400 165 L 332 262 L 282 262 Z" fill="#3B7EF6"/>
+            <polygon points="328,270 472,270 494,300 306,300" fill="#1B56C7"/>
+          </svg>
+          <div>
+            <div class="footer-brand">LAUNCH OVERSEAS LIMITED</div>
+            <div class="footer-brand-zh">領海品牌管理有限公司</div>
+          </div>
+        </div>
+        <p class="footer-sub">Registered in Hong Kong SAR</p>
+      </div>
+
+      <div class="footer-col footer-center">
+        <p class="footer-meta">Direct: contact@launchoverseas.com</p>
+        <p class="footer-meta">Operations: Mon–Fri, 09:00–18:00 HKT</p>
+      </div>
+
+      <div class="footer-col footer-right">
+        <p class="footer-copy">&copy; 2026 Launch Overseas Limited. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html" style="color: var(--color-indigo); font-weight: 600;">Privacy Policy</a>
+          <span class="link-divider">|</span>
+          <span>Terms of Advisory</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
