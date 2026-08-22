@@ -273,6 +273,126 @@
 }
 
 /* ==========================================================================
+   Roadmap (3-Phase Growth Engine) Component
+   ========================================================================== */
+.roadmap-card {
+  position: relative;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 32px;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.roadmap-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px -4px rgba(27, 86, 199, 0.06);
+}
+
+.roadmap-step-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-azure-light);
+  border: 1px solid #BFDBFE;
+  color: var(--color-indigo);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.roadmap-title {
+  font-size: 1.1875rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.roadmap-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.roadmap-list li {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  position: relative;
+  padding-left: 16px;
+}
+
+.roadmap-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-azure);
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   Category Playbooks Component
+   ========================================================================== */
+.playbook-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.playbook-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px -4px rgba(27, 86, 199, 0.06);
+}
+
+.playbook-tag {
+  display: inline-block;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-indigo);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.playbook-title {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+.playbook-badge-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.playbook-pill {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  color: var(--text-secondary);
+  border-radius: 3px;
+}
+
+.playbook-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* ==========================================================================
    Interactive Partnership Model Switcher Component
    ========================================================================== */
 .model-switcher-wrap {

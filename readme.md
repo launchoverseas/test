@@ -98,3 +98,31 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-22
 - Feature Added: Interactive Commercial Model Switcher Component
 - Architecture Notes: Replaced wide comparison table with an accessible, mobile-first 3-way segmented card switcher (`role="tablist"`, `role="tabpanel"`) across all three static pages (`index.html`, `zh-hk.html`, `zh-cn.html`). Expanded `css/components.css` with structured detail blocks (Operational Scope, Commercial Structure, Inventory Title, Channel Coverage) and integrated modular tab switching logic into `js/app.js` (214 lines) while preserving zero-database security and full SEO DOM retention.
+# Launch Overseas Limited (領海品牌管理有限公司)
+> Global Brand Management & Multi-Market Distribution Consultancy operating from Hong Kong SAR.
+> Aligned with international GoGlobal trade standards, HKTDC professional services, and tier-1 Chinese expansion methodologies.
+
+## Organization Summary
+- Legal Entity: Launch Overseas Limited (領海品牌管理有限公司)
+- Jurisdiction: Hong Kong Special Administrative Region
+- Primary Scope: Strategic market entry advisory, testing & certification (US FDA / EU CPNP), omnichannel retail door distribution, localized PR campaigns, and cross-border tax/legal governance.
+- Target Expansion Territories: North America (US, Canada), Europe (UK, EU), East Asia (Japan, South Korea), Southeast Asia (Singapore, Malaysia, Indonesia, Thailand, Vietnam).
+
+## The 3-Phase Go-Global Growth Engine
+1. Phase 1 (Days 0-60): Compliance Staging Foundation (FDA/CPNP toxicological filings, Hong Kong treasury, trademark registration).
+2. Phase 2 (Days 60-120): Omnichannel Market Launch (D2C storefronts, Tier-1 Amazon, physical retail door placement).
+3. Phase 3 (Days 120-180+): Brand Equity & Retail Scale (Localized creator seeding, trade media features, pop-ups, IP licensing).
+
+## Category Playbooks
+- Playbook A (Beauty & Personal Care): Formulation audits, MoCRA/CPNP dossiers, Sephora/Ulta/Watsons distribution.
+- Playbook B (Consumer Electronics & Hardware): FCC/CE certifications, Amazon Tier-1, Best Buy/Target retail distribution, reverse logistics.
+- Playbook C (Lifestyle & FMCG): IP licensing, cultural packaging adaptation, pop-up experiential retail.
+
+## Commercial Partnership Models
+- Full Turnkey Incubation: End-to-end delegation, base fee + tiered revenue share, brand retains inventory title.
+- Regional Distribution Agency: Exclusive territory sales, PO wholesale margin, distributor takes port delivery title.
+- Strategic IP Licensing: Asset-light overseas manufacturing, upfront royalty + sales percentage.
+
+## Direct Inquiries
+- Email: contact@launchoverseas.com
+- Operational Hours: Monday - Friday, 09:00 - 18:00 HKT
