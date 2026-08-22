@@ -102,3 +102,7 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-22
 - Feature Added: Multi-Locale Privacy Policy Architecture (privacy.html, privacy-zh-hk.html, privacy-zh-cn.html)
 - Architecture Notes: Deployed 3 static, regulatory-compliant privacy policy pages covering Hong Kong PDPO, EU/UK GDPR, and China PIPL standards. Affirmed strict zero-tracker / zero-cookie technical architectures, bilateral Mutual NDA data protection protocols, and explicit data subject access rights. Upgraded footer navigation across all pages (`index.html`, `zh-hk.html`, `zh-cn.html`) to link to their respective localized privacy policies.
+
+- Date: 2026-08-22
+- Feature Added: Multi-Locale Terms of Service Architecture (terms.html, terms-zh-hk.html, terms-zh-cn.html)
+- Architecture Notes: Published 3 dedicated static Terms of Service pages specifying non-binding preliminary exploratory communications, regulatory filing disclaimers, client asset ownership, limitation of commercial liability, and binding dispute resolution administered by the Hong Kong International Arbitration Centre (HKIAC). Synchronized all reciprocal `hreflang` tags and updated footers across all 6 HTML entry points.
