@@ -1,0 +1,286 @@
+/* ==========================================================================
+   Launch Overseas Limited - Interactive Components & Contact Styles
+   (Buttons, Scoping Generator, Contact Module, FAQ)
+   ========================================================================== */
+
+/* Global Buttons & Links */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 24px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-smooth), opacity var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.btn-primary {
+  background-color: var(--color-indigo);
+  color: #FFFFFF;
+  border: 1px solid var(--color-indigo);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-indigo-hover);
+  transform: translateY(-1px);
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-indigo);
+}
+
+.btn-link:hover .arrow {
+  transform: translateX(4px);
+}
+
+.arrow {
+  transition: transform var(--transition-smooth);
+}
+
+/* FAQ Module */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.faq-item {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 28px;
+}
+
+.faq-question {
+  font-size: 1.0625rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  color: var(--color-indigo);
+}
+
+.faq-answer {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Interactive Go-Global Scoping Widget */
+.scoping-widget {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 32px;
+  margin-bottom: 36px;
+}
+
+.scoping-header {
+  margin-bottom: 24px;
+}
+
+.scoping-title {
+  font-size: 1.1875rem;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.scoping-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.scoping-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.scoping-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-indigo);
+  margin-bottom: 12px;
+}
+
+.scoping-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.scope-pill {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+}
+
+.scope-pill:hover {
+  border-color: var(--color-indigo);
+  color: var(--color-indigo);
+}
+
+.scope-pill.active {
+  background-color: var(--color-indigo);
+  border-color: var(--color-indigo);
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(27, 86, 199, 0.2);
+}
+
+.scoping-result {
+  background-color: var(--bg-surface);
+  border: 1px dashed var(--color-azure);
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Contact Card Module */
+.contact-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 8px;
+  padding: 48px;
+  box-shadow: 0 4px 24px -2px rgba(27, 86, 199, 0.06);
+}
+
+.contact-header {
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.contact-lead {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.trust-commitments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-top: 1px solid var(--border-stone);
+  border-bottom: 1px solid var(--border-stone);
+  padding: 24px 0;
+  margin-bottom: 36px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.trust-bullet {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-azure);
+  margin-top: 8px;
+  flex-shrink: 0;
+  border-radius: 1px;
+}
+
+.trust-item strong {
+  color: var(--text-primary);
+}
+
+.contact-channels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.channel-box {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.channel-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-indigo);
+  font-weight: 700;
+}
+
+.channel-value {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  word-break: break-all;
+}
+
+.channel-value.email-link, .channel-value.whatsapp-link {
+  color: var(--color-indigo);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-primary);
+  margin-top: 4px;
+  border-radius: 4px;
+  min-height: 28px;
+  transition: border-color var(--transition-smooth), color var(--transition-smooth);
+}
+
+.copy-btn:hover {
+  border-color: var(--color-indigo);
+  color: var(--color-indigo);
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+  .faq-grid { grid-template-columns: 1fr; }
+  .trust-commitments { grid-template-columns: 1fr; gap: 14px; }
+  .contact-channels { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .scoping-widget { padding: 24px 16px; }
+  .contact-card { padding: 24px 16px; }
+  .contact-title { font-size: 1.5rem; }
+}

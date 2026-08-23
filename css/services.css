@@ -1,0 +1,281 @@
+/* ==========================================================================
+   Launch Overseas Limited - Services & Methodology Styles
+   (Pillars, Roadmaps, Interactive Model Switcher)
+   ========================================================================== */
+
+/* Feature & Pillar Cards */
+.feature-card, .pillar-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 32px;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.feature-card:hover, .pillar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px -4px rgba(27, 86, 199, 0.06);
+}
+
+.card-index {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-azure);
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 1.1875rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.card-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.pillar-header {
+  border-bottom: 1px solid var(--border-stone);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.pillar-tag {
+  display: block;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-azure);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.pillar-title {
+  font-size: 1.25rem;
+}
+
+.pillar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pillar-list li {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.pillar-list strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Roadmap Component */
+.roadmap-card {
+  position: relative;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 32px;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.roadmap-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px -4px rgba(27, 86, 199, 0.06);
+}
+
+.roadmap-step-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-azure-light);
+  border: 1px solid #BFDBFE;
+  color: var(--color-indigo);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.roadmap-title {
+  font-size: 1.1875rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.roadmap-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.roadmap-list li {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  position: relative;
+  padding-left: 16px;
+}
+
+.roadmap-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-azure);
+  font-weight: bold;
+}
+
+/* Interactive Partnership Model Switcher */
+.model-switcher-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.model-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.model-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background-color var(--transition-smooth), color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.model-tab-btn:hover {
+  color: var(--color-indigo);
+}
+
+.model-tab-btn.active {
+  background-color: var(--bg-surface);
+  color: var(--color-indigo);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.model-panels {
+  position: relative;
+}
+
+.model-panel {
+  display: none;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 20px -2px rgba(27, 86, 199, 0.05);
+}
+
+.model-panel.active {
+  display: block;
+  animation: panelFadeIn 0.25s ease-in-out;
+}
+
+@keyframes panelFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.panel-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid var(--border-stone);
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+}
+
+.panel-title-wrap {
+  max-width: 680px;
+}
+
+.panel-badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-azure);
+  margin-bottom: 6px;
+}
+
+.panel-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.panel-profile-lead {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+}
+
+.panel-profile-lead strong {
+  color: var(--text-primary);
+}
+
+.panel-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.detail-block {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-indigo);
+  margin-bottom: 8px;
+}
+
+.detail-content {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+  .model-tabs { grid-template-columns: 1fr; }
+  .panel-details-grid { grid-template-columns: 1fr; gap: 16px; }
+}
+
+@media (max-width: 768px) {
+  .model-panel { padding: 24px 16px; }
+  .panel-title { font-size: 1.25rem; }
+}

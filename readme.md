@@ -110,3 +110,7 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-23
 - Feature Added: Authentic PPT Case Studies, Partner Ecosystem & Anonymized Leadership Integration
 - Architecture Notes: Replaced generic playbooks with verified case studies (Florasis / 花西子, Spes / 诗裴丝, Voolga / 敷尔佳) across `index.html`, `zh-hk.html`, and `zh-cn.html`[cite: 1]. Added a dual-tier Global Media & Retail Partner grid (Vogue, WWD, Forbes, Amazon, TikTok, @cosme, Isetan, DFS, LoFt) and an institutional leadership credentials card highlighting 20+ years of executive cross-border management and national brand export standard drafting without personal names[cite: 1]. Updated `llms.txt`, preserved the interactive scoping generator, and verified `js/app.js` at 268 lines (strictly under 300 lines).
+
+- Date: 2026-08-23
+- Feature Added: Domain-Driven Modular CSS Split Architecture (sections.css, services.css, interactive.css)
+- Architecture Notes: Retired the monolithic `components.css` file and split component styles into 3 domain-driven stylesheets under 160 lines each (`sections.css` for hero/partners/cases/leadership, `services.css` for pillars/roadmap/models, and `interactive.css` for buttons/scoping widget/contact). Updated all 9 HTML entry points (`index.html`, `zh-hk.html`, `zh-cn.html`, `privacy.html`, `privacy-zh-hk.html`, `privacy-zh-cn.html`, `terms.html`, `terms-zh-hk.html`, `terms-zh-cn.html`) to link to the new parallel stylesheets with clean relative paths, resolving GitHub Pages 404 styling errors.
