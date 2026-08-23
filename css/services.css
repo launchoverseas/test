@@ -1,7 +1,120 @@
 /* ==========================================================================
    Launch Overseas Limited - Services & Methodology Styles
-   (Pillars, Roadmaps, Interactive Model Switcher)
+   (Pillars, Roadmaps, Comparison Matrix, DNA Block, Model Switcher)
    ========================================================================== */
+
+/* Corporate DNA Strip (Mission, Vision, Values) */
+.dna-section {
+  padding: 64px 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-stone);
+}
+
+.dna-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.dna-card {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 28px;
+}
+
+.dna-badge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-indigo);
+  margin-bottom: 10px;
+}
+
+.dna-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.dna-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Strategic Comparison Matrix Module */
+.comparison-section {
+  padding: 80px 0;
+  background-color: var(--bg-canvas);
+  border-bottom: 1px solid var(--border-stone);
+}
+
+.comparison-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  background-color: var(--bg-surface);
+  box-shadow: 0 4px 20px -2px rgba(27, 86, 199, 0.04);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.comparison-table th, .comparison-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border-stone);
+  border-right: 1px solid var(--border-stone);
+  vertical-align: middle;
+}
+
+.comparison-table th:last-child, .comparison-table td:last-child {
+  border-right: none;
+}
+
+.comparison-table thead th {
+  background-color: var(--bg-canvas);
+  font-weight: 700;
+  color: var(--color-indigo);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.comparison-table tbody th {
+  background-color: var(--bg-canvas);
+  font-weight: 700;
+  color: var(--text-primary);
+  width: 22%;
+}
+
+.comparison-table tbody td.traditional-col {
+  color: var(--text-secondary);
+  background-color: #FAFAFA;
+  width: 39%;
+  line-height: 1.5;
+}
+
+.comparison-table tbody td.full-domain-col {
+  color: var(--text-primary);
+  background-color: #FFFFFF;
+  font-weight: 600;
+  width: 39%;
+  line-height: 1.5;
+}
+
+.comparison-table tr:last-child th, .comparison-table tr:last-child td {
+  border-bottom: none;
+}
 
 /* Feature & Pillar Cards */
 .feature-card, .pillar-card {
@@ -271,11 +384,15 @@
 
 /* Responsive Overrides */
 @media (max-width: 992px) {
+  .dna-grid { grid-template-columns: 1fr; }
   .model-tabs { grid-template-columns: 1fr; }
   .panel-details-grid { grid-template-columns: 1fr; gap: 16px; }
 }
 
 @media (max-width: 768px) {
+  .dna-section, .comparison-section { padding: 48px 0; }
+  .dna-card { padding: 20px 16px; }
+  .comparison-table th, .comparison-table td { padding: 12px 14px; font-size: 0.8125rem; }
   .model-panel { padding: 24px 16px; }
   .panel-title { font-size: 1.25rem; }
 }
