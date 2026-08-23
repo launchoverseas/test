@@ -114,3 +114,7 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-23
 - Feature Added: Domain-Driven Modular CSS Split Architecture (sections.css, services.css, interactive.css)
 - Architecture Notes: Retired the monolithic `components.css` file and split component styles into 3 domain-driven stylesheets under 160 lines each (`sections.css` for hero/partners/cases/leadership, `services.css` for pillars/roadmap/models, and `interactive.css` for buttons/scoping widget/contact). Updated all 9 HTML entry points (`index.html`, `zh-hk.html`, `zh-cn.html`, `privacy.html`, `privacy-zh-hk.html`, `privacy-zh-cn.html`, `terms.html`, `terms-zh-hk.html`, `terms-zh-cn.html`) to link to the new parallel stylesheets with clean relative paths, resolving GitHub Pages 404 styling errors.
+
+- Date: 2026-08-23
+- Feature Added: Production Text Sanitization & Complete Legal Page Restoration
+- Architecture Notes: Fully stripped all internal reference text markers from `index.html`, `zh-hk.html`, `zh-cn.html`, and `llms.txt`[cite: 1]. Restored comprehensive multi-clause legal disclosures across all 6 static Privacy and Terms pages (`privacy.html`, `privacy-zh-hk.html`, `privacy-zh-cn.html`, `terms.html`, `terms-zh-hk.html`, `terms-zh-cn.html`) ensuring full compliance with Hong Kong PDPO, EU GDPR, China PIPL, and HKIAC arbitration rules. Verified clean modular CSS stylesheet routing and confirmed `js/app.js` line count at 268 lines.
