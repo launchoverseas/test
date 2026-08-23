@@ -122,3 +122,7 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-23
 - Feature Added: Comprehensive Artifact Removal & Legal Multi-Clause Restoration
 - Architecture Notes: Completely eliminated all literal citation markers from `zh-hk.html`, `zh-cn.html`, `index.html`, and `llms.txt`. Restored complete 5-section legal and compliance terms across all 6 static Privacy and Terms pages (`privacy.html`, `privacy-zh-hk.html`, `privacy-zh-cn.html`, `terms.html`, `terms-zh-hk.html`, `terms-zh-cn.html`) with Hong Kong PDPO, EU GDPR, China PIPL, and HKIAC arbitration rules fully intact. Verified modular CSS asset linking across all entry points.
+
+- Date: 2026-08-23
+- Feature Added: English Artifact Removal & Final Sanitization
+- Architecture Notes: Cleaned the remaining English-language literal citation markers `[cite: 1]` from `index.html`, `privacy.html`, `terms.html`, and `llms.txt`. Verified all content sections across the English site (Hero, Partners, Case Studies, Leadership, Capabilities, Roadmap, Models, FAQ, Contact) to ensure pristine commercial copy.
