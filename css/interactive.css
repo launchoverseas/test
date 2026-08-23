@@ -1,6 +1,6 @@
 /* ==========================================================================
    Launch Overseas Limited - Interactive Components & Contact Styles
-   (Buttons, Scoping Generator, Contact Module, FAQ)
+   (Buttons, Status Badges, Scoping Generator, Scroll Reveals, Contact Card)
    ========================================================================== */
 
 /* Global Buttons & Links */
@@ -14,18 +14,20 @@
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color var(--transition-smooth), opacity var(--transition-smooth), transform var(--transition-smooth);
+  transition: background-color var(--transition-smooth), opacity var(--transition-smooth), transform var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
 .btn-primary {
   background-color: var(--color-indigo);
   color: #FFFFFF;
   border: 1px solid var(--color-indigo);
+  box-shadow: 0 2px 8px rgba(27, 86, 199, 0.2);
 }
 
 .btn-primary:hover {
   background-color: var(--color-indigo-hover);
   transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(27, 86, 199, 0.3);
 }
 
 .btn-link {
@@ -46,6 +48,69 @@
   transition: transform var(--transition-smooth);
 }
 
+/* 2026 Live Pulse Status Indicator */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.status-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-emerald);
+  flex-shrink: 0;
+}
+
+.status-dot.pulse::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background-color: inherit;
+  opacity: 0.6;
+  animation: statusPulse 2s infinite ease-out;
+}
+
+.status-dot.standby {
+  background-color: var(--color-azure);
+}
+
+@keyframes statusPulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  70% { transform: scale(2.4); opacity: 0; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* Scroll Reveal Micro-Interactions */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /* FAQ Module */
 .faq-grid {
   display: grid;
@@ -54,10 +119,13 @@
 }
 
 .faq-item {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-stone);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 6px;
   padding: 28px;
+  box-shadow: var(--glass-shadow);
 }
 
 .faq-question {
@@ -90,11 +158,6 @@
   font-size: 1.1875rem;
   margin-bottom: 8px;
   color: var(--text-primary);
-}
-
-.scoping-desc {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
 }
 
 .scoping-grid {
@@ -158,11 +221,25 @@
 
 /* Contact Card Module */
 .contact-card {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-stone);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
   border-radius: 8px;
   padding: 48px;
-  box-shadow: 0 4px 24px -2px rgba(27, 86, 199, 0.06);
+  box-shadow: var(--glass-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--glass-border-highlight), transparent);
 }
 
 .contact-header {
@@ -226,6 +303,12 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+}
+
+.channel-box:hover {
+  transform: translateY(-2px);
+  border-color: #CBD5E1;
 }
 
 .channel-label {

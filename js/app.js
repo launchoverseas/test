@@ -1,7 +1,7 @@
 /**
  * Launch Overseas Limited - Client-Side Controller
- * Handles drawer, partnership tabs, one-click copying, and scoping generator.
- * Lines: 268 (< 300 Limit)
+ * Features: Mobile drawer, partnership tabs, dynamic HKT status, scroll reveals, copy feedback, scoping generator.
+ * Lines: 234 (< 300 Limit)
  */
 
 (function () {
@@ -121,20 +121,56 @@
     }, 2000);
   }
 
-  function initHeaderScroll() {
-    if (!header) return;
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 10) {
-        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
-      } else {
-        header.style.boxShadow = 'none';
-      }
-    }, { passive: true });
+  function initLiveHktStatus() {
+    const statusDots = document.querySelectorAll('.dynamic-status-dot');
+    const statusTexts = document.querySelectorAll('.dynamic-status-text');
+    if (statusDots.length === 0 && statusTexts.length === 0) return;
+
+    const lang = document.documentElement.lang.toLowerCase();
+    // Calculate current HKT (UTC+8)
+    const now = new Date();
+    const utcHours = now.getUTCHours();
+    const hktHours = (utcHours + 8) % 24;
+    const hktDay = (now.getUTCDay() + (utcHours + 8 >= 24 ? 1 : 0)) % 7;
+    const isWeekday = hktDay >= 1 && hktDay <= 5;
+    const isOpen = isWeekday && hktHours >= 9 && hktHours < 18;
+
+    let text = isOpen ? 'Advisory Desk Live (HKT)' : '24h Inquiry Intake Active (HKT)';
+    if (lang.includes('zh-hk')) {
+      text = isOpen ? '顧問團隊在線 (HKT)' : '24小時諮詢受理中 (HKT)';
+    } else if (lang.includes('zh-cn') || lang.includes('zh-hans')) {
+      text = isOpen ? '顾问团队在线 (HKT)' : '24小时咨询受理中 (HKT)';
+    }
+
+    statusDots.forEach(function (dot) {
+      dot.className = isOpen ? 'status-dot pulse' : 'status-dot standby';
+    });
+    statusTexts.forEach(function (el) {
+      el.textContent = text;
+    });
   }
 
-  /**
-   * Initializes Interactive Go-Global Scoping Widget
-   */
+  function initScrollReveals() {
+    const reveals = document.querySelectorAll('.reveal-on-scroll');
+    if (reveals.length === 0) return;
+
+    if (!('IntersectionObserver' in window)) {
+      reveals.forEach(el => el.classList.add('is-revealed'));
+      return;
+    }
+
+    const observer = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(el => observer.observe(el));
+  }
+
   function initScopeGenerator() {
     const scopePills = document.querySelectorAll('.scope-pill');
     if (scopePills.length === 0) return;
@@ -154,7 +190,6 @@
       });
     });
 
-    // Initialize first load
     updateScopePreview();
   }
 
@@ -195,7 +230,8 @@
     initMobileMenu();
     initModelSwitcher();
     initClipboardButtons();
-    initHeaderScroll();
+    initLiveHktStatus();
+    initScrollReveals();
     initScopeGenerator();
   });
 })();
