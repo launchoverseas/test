@@ -118,3 +118,7 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-23
 - Feature Added: Production Text Sanitization & Complete Legal Page Restoration
 - Architecture Notes: Fully stripped all internal reference text markers from `index.html`, `zh-hk.html`, `zh-cn.html`, and `llms.txt`[cite: 1]. Restored comprehensive multi-clause legal disclosures across all 6 static Privacy and Terms pages (`privacy.html`, `privacy-zh-hk.html`, `privacy-zh-cn.html`, `terms.html`, `terms-zh-hk.html`, `terms-zh-cn.html`) ensuring full compliance with Hong Kong PDPO, EU GDPR, China PIPL, and HKIAC arbitration rules. Verified clean modular CSS stylesheet routing and confirmed `js/app.js` line count at 268 lines.
+
+- Date: 2026-08-23
+- Feature Added: Comprehensive Artifact Removal & Legal Multi-Clause Restoration
+- Architecture Notes: Completely eliminated all literal citation markers from `zh-hk.html`, `zh-cn.html`, `index.html`, and `llms.txt`. Restored complete 5-section legal and compliance terms across all 6 static Privacy and Terms pages (`privacy.html`, `privacy-zh-hk.html`, `privacy-zh-cn.html`, `terms.html`, `terms-zh-hk.html`, `terms-zh-cn.html`) with Hong Kong PDPO, EU GDPR, China PIPL, and HKIAC arbitration rules fully intact. Verified modular CSS asset linking across all entry points.
