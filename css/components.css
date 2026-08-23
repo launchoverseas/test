@@ -201,6 +201,168 @@
   flex-shrink: 0;
 }
 
+/* ==========================================================================
+   Global Partners & Media Ecosystem Component
+   ========================================================================== */
+.partners-section {
+  padding: 56px 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-stone);
+}
+
+.partner-tier-block {
+  margin-bottom: 28px;
+}
+
+.partner-tier-block:last-child {
+  margin-bottom: 0;
+}
+
+.partner-tier-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-indigo);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.partner-pill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.partner-badge {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  color: var(--text-primary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   Verified Case Studies Component
+   ========================================================================== */
+.cases-section {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border-stone);
+}
+
+.case-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 8px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px -2px rgba(27, 86, 199, 0.04);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.case-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -4px rgba(27, 86, 199, 0.08);
+}
+
+.case-tag {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-azure);
+  margin-bottom: 8px;
+}
+
+.case-brand-title {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.case-highlights-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.case-highlight-pill {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  background-color: var(--color-azure-light);
+  border: 1px solid #BFDBFE;
+  color: var(--color-indigo);
+  border-radius: 3px;
+}
+
+.case-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.case-channel-block {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 4px;
+  padding: 14px;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.case-channel-block strong {
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
+   Leadership & Executive Governance Component
+   ========================================================================== */
+.leadership-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 20px -2px rgba(27, 86, 199, 0.05);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.leadership-item {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 24px;
+}
+
+.leadership-item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-indigo);
+  margin-bottom: 8px;
+}
+
+.leadership-item-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
 /* Feature & Pillar Cards */
 .feature-card, .pillar-card {
   background-color: var(--bg-surface);
@@ -272,9 +434,7 @@
   font-weight: 600;
 }
 
-/* ==========================================================================
-   Roadmap (3-Phase Growth Engine) Component
-   ========================================================================== */
+/* Roadmap Component */
 .roadmap-card {
   position: relative;
   background-color: var(--bg-surface);
@@ -333,68 +493,7 @@
   font-weight: bold;
 }
 
-/* ==========================================================================
-   Category Playbooks Component
-   ========================================================================== */
-.playbook-card {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-stone);
-  border-radius: 6px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
-}
-
-.playbook-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px -4px rgba(27, 86, 199, 0.06);
-}
-
-.playbook-tag {
-  display: inline-block;
-  font-size: 0.6875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-indigo);
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.playbook-title {
-  font-size: 1.25rem;
-  line-height: 1.35;
-  margin-bottom: 16px;
-}
-
-.playbook-badge-row {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-
-.playbook-pill {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  padding: 3px 8px;
-  background-color: var(--bg-canvas);
-  border: 1px solid var(--border-stone);
-  color: var(--text-secondary);
-  border-radius: 3px;
-}
-
-.playbook-desc {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
-
-/* ==========================================================================
-   Interactive Partnership Model Switcher Component
-   ========================================================================== */
+/* Interactive Partnership Model Switcher */
 .model-switcher-wrap {
   display: flex;
   flex-direction: column;
@@ -530,21 +629,6 @@
   line-height: 1.55;
 }
 
-.panel-action-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-stone);
-}
-
-.panel-action-note {
-  font-size: 0.8125rem;
-  color: var(--text-secondary);
-}
-
 /* FAQ Module */
 .faq-grid {
   display: grid;
@@ -570,6 +654,89 @@
   font-size: 0.875rem;
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+/* Interactive Go-Global Scoping Widget */
+.scoping-widget {
+  background-color: var(--bg-canvas);
+  border: 1px solid var(--border-stone);
+  border-radius: 6px;
+  padding: 32px;
+  margin-bottom: 36px;
+}
+
+.scoping-header {
+  margin-bottom: 24px;
+}
+
+.scoping-title {
+  font-size: 1.1875rem;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.scoping-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.scoping-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.scoping-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-indigo);
+  margin-bottom: 12px;
+}
+
+.scoping-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.scope-pill {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+}
+
+.scope-pill:hover {
+  border-color: var(--color-indigo);
+  color: var(--color-indigo);
+}
+
+.scope-pill.active {
+  background-color: var(--color-indigo);
+  border-color: var(--color-indigo);
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(27, 86, 199, 0.2);
+}
+
+.scoping-result {
+  background-color: var(--bg-surface);
+  border: 1px dashed var(--color-azure);
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  font-style: italic;
+  line-height: 1.5;
 }
 
 /* Contact Card Module */
@@ -695,6 +862,10 @@
     gap: 36px;
   }
 
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
   .model-tabs {
     grid-template-columns: 1fr;
   }
@@ -719,12 +890,20 @@
     padding: 20px 16px;
   }
 
+  .case-card {
+    padding: 24px 16px;
+  }
+
   .model-panel {
     padding: 24px 16px;
   }
 
   .panel-title {
     font-size: 1.25rem;
+  }
+  
+  .scoping-widget {
+    padding: 24px 16px;
   }
 
   .contact-card {

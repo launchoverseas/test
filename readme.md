@@ -106,3 +106,7 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-22
 - Feature Added: Multi-Locale Terms of Service Architecture (terms.html, terms-zh-hk.html, terms-zh-cn.html)
 - Architecture Notes: Published 3 dedicated static Terms of Service pages specifying non-binding preliminary exploratory communications, regulatory filing disclaimers, client asset ownership, limitation of commercial liability, and binding dispute resolution administered by the Hong Kong International Arbitration Centre (HKIAC). Synchronized all reciprocal `hreflang` tags and updated footers across all 6 HTML entry points.
+
+- Date: 2026-08-23
+- Feature Added: Authentic PPT Case Studies, Partner Ecosystem & Anonymized Leadership Integration
+- Architecture Notes: Replaced generic playbooks with verified case studies (Florasis / 花西子, Spes / 诗裴丝, Voolga / 敷尔佳) across `index.html`, `zh-hk.html`, and `zh-cn.html`[cite: 1]. Added a dual-tier Global Media & Retail Partner grid (Vogue, WWD, Forbes, Amazon, TikTok, @cosme, Isetan, DFS, LoFt) and an institutional leadership credentials card highlighting 20+ years of executive cross-border management and national brand export standard drafting without personal names[cite: 1]. Updated `llms.txt`, preserved the interactive scoping generator, and verified `js/app.js` at 268 lines (strictly under 300 lines).
