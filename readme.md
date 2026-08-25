@@ -134,3 +134,7 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 - Date: 2026-08-24
 - Feature Added: 2026 Enterprise Glassmorphism, Dynamic HKT Live Status Badging & Scroll Reveals
 - Architecture Notes: Upgraded design tokens across css/variables.css, css/sections.css, and css/interactive.css with subtle enterprise glassmorphic specular highlights and luminous drop shadows. Implemented real-time client-side Hong Kong Time (UTC+8) calculation in js/app.js to toggle between active emerald pulse ("Advisory Desk Live") and sapphire intake indicators across the Hero and Contact sections in all three locales (index.html, zh-hk.html, zh-cn.html). Integrated an IntersectionObserver-driven scroll reveal pipeline with prefers-reduced-motion accessibility fallbacks while keeping js/app.js verified at 234 lines.
+
+- Date: 2026-08-25
+- Feature Added: 30,000+ sq ft Hong Kong Central Hub & 15+ Years Freight Forwarding Network Integration
+- Architecture Notes: Upgraded the Hero visual matrix (Free-Port / Southeast Asia tile), Pillar 04 (Global Supply Chain), Phase 01 roadmap, and Executive Leadership credentials across index.html, zh-hk.html, zh-cn.html, and llms.txt. Highlighted the 30,000+ sq ft central warehouse in Hong Kong, multi-carrier global B2C integrations, and 15+ years of institutional freight forwarding leadership. Verified Schema.org JSON-LD Corporation schema updates and confirmed js/app.js strictly maintained at 234 lines.
