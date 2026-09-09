@@ -54,7 +54,7 @@
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "企业合作咨询",
-          "email": "contact@launchoverseas.com",
+          "email": "info@launchoverseas.com",
           "availableLanguage": ["zh-Hans", "zh-Hant", "en"]
         }
       }
@@ -628,13 +628,13 @@
           <div class="contact-header">
             <div class="meta-tag">企业咨询对接</div>
             <h2 class="contact-title">开启战略合作咨询</h2>
-            <p class="contact-lead">请在下方选择您的出海需求，系统将为您自动生成预填写的咨询信息，以便我们的香港专业团队进行评估。</p>
+            <p class="contact-lead">请在下方选择您的出海需求并填写联络信息，系统将自动向我们的香港专业顾问团队发送出海咨询。</p>
           </div>
 
           <!-- Interactive Go-Global Scoping Widget -->
           <div class="scoping-widget">
             <div class="scoping-header">
-              <h3 class="scoping-title">一键生成您的咨询需求</h3>
+              <h3 class="scoping-title">配置您的出海咨询需求</h3>
             </div>
             
             <div class="scoping-grid">
@@ -668,7 +668,43 @@
             </div>
 
             <div class="scoping-result">
-              <p id="scope-preview">"您好，领海品牌管理团队。我们是一家【美妆护肤】品牌，希望通过【全流程托管】模式拓展至【北美地区】。希望预约一次战略咨询。"</p>
+              <p id="scope-preview">"您好，领海品牌管理团队。我们是一家【美妆护肤】品牌，希望通过【全流程托管】模式拓展至【北美地区】。"</p>
+            </div>
+
+            <!-- Direct Dynamic Inquiry Form -->
+            <div class="inquiry-form-wrap">
+              <form id="enquiry-form" novalidate>
+                <input type="text" name="company_verify" id="hp-company-verify" class="honeypot-field" tabindex="-1" autocomplete="off">
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="field-name">联系人姓名 *</label>
+                    <input type="text" id="field-name" class="form-input" placeholder="例如：陈经理" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="field-email">企业工作邮箱 *</label>
+                    <input type="email" id="field-email" class="form-input" placeholder="name@company.com" required>
+                  </div>
+                  <div class="form-field">
+                    <label for="field-company">公司 / 品牌名称</label>
+                    <input type="text" id="field-company" class="form-input" placeholder="例如：领先消费品有限公司">
+                  </div>
+                </div>
+
+                <div class="form-field" style="margin-bottom: 8px;">
+                  <label for="field-brief">出海需求与备注 (选填)</label>
+                  <textarea id="field-brief" class="form-textarea" placeholder="请简要描述您的主推产品、目标拓展进度或期望进驻渠道..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary" id="submit-enquiry-btn">发送商业咨询</button>
+                  <button type="button" class="btn copy-btn" id="fallback-copy-btn" aria-label="复制咨询内容">
+                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <span>复制咨询内容 (网页邮箱备用)</span>
+                  </button>
+                </div>
+                <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+              </form>
             </div>
           </div>
 
@@ -687,19 +723,15 @@
             </div>
           </div>
 
+          <!-- Clean 2-Column Contact Grid -->
           <div class="contact-channels">
             <div class="channel-box">
-              <span class="channel-label">官方咨询邮箱</span>
-              <a href="#" id="dynamic-email-link" class="channel-value email-link">contact@launchoverseas.com</a>
-              <button class="copy-btn" data-copy="contact@launchoverseas.com" aria-label="复制电子邮箱">
+              <span class="channel-label">官方咨询与商务对接邮箱</span>
+              <a href="mailto:info@launchoverseas.com" id="dynamic-email-link" class="channel-value email-link">info@launchoverseas.com</a>
+              <button class="copy-btn" data-copy="info@launchoverseas.com" aria-label="复制电子邮箱">
                 <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 <span>复制邮箱</span>
               </button>
-            </div>
-
-            <div class="channel-box">
-              <span class="channel-label">即时商务对接 (WhatsApp)</span>
-              <a href="#" id="dynamic-wa-link" target="_blank" rel="noopener noreferrer" class="channel-value whatsapp-link">+852 (一键发送咨询)</a>
             </div>
 
             <div class="channel-box">
@@ -734,7 +766,7 @@
       </div>
 
       <div class="footer-col footer-center">
-        <p class="footer-meta">商务联络: contact@launchoverseas.com</p>
+        <p class="footer-meta">商务联络: info@launchoverseas.com</p>
         <p class="footer-meta">工作时间: 周一至周五, 09:00–18:00 HKT</p>
       </div>
 
@@ -750,5 +782,6 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>

@@ -1,13 +1,12 @@
 /**
  * Launch Overseas Limited - Client-Side Controller
- * Features: Mobile drawer, partnership tabs, dynamic HKT status, scroll reveals, copy feedback, scoping generator.
- * Lines: 234 (< 300 Limit)
+ * Features: Mobile drawer, partnership tabs, dynamic HKT status, scroll reveals, copy feedback, scoping preview.
+ * Compliance: Strictly under 300 lines (Total Lines: 214)
  */
 
 (function () {
   'use strict';
 
-  const header = document.getElementById('site-header');
   const mobileToggle = document.getElementById('mobile-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -127,7 +126,6 @@
     if (statusDots.length === 0 && statusTexts.length === 0) return;
 
     const lang = document.documentElement.lang.toLowerCase();
-    // Calculate current HKT (UTC+8)
     const now = new Date();
     const utcHours = now.getUTCHours();
     const hktHours = (utcHours + 8) % 24;
@@ -205,25 +203,19 @@
 
     if (!regions) regions = (lang.includes('zh') ? '全球市場' : 'Global Markets');
 
-    let msg = `Hello Launch Overseas team, we are a [${cat}] brand looking to expand into [${regions}] via the [${model}] model. We would like to request a strategic consultation.`;
-    let subject = 'Strategic Expansion Inquiry';
+    let msg = `Hello Launch Overseas team, we are a [${cat}] brand looking to expand into [${regions}] via the [${model}] model.`;
 
     if (lang.includes('zh-hk')) {
-      msg = `您好，領海品牌管理團隊。我們是一家【${cat}】品牌，希望透過【${model}】模式拓展至【${regions}】。希望預約一次戰略諮詢。`;
-      subject = '出海戰略諮詢';
+      msg = `您好，領海品牌管理團隊。我們是一家【${cat}】品牌，希望透過【${model}】模式拓展至【${regions}】。`;
     } else if (lang.includes('zh-cn') || lang.includes('zh-hans')) {
-      msg = `您好，领海品牌管理团队。我们是一家【${cat}】品牌，希望通过【${model}】模式拓展至【${regions}】。希望预约一次战略咨询。`;
-      subject = '出海战略咨询';
+      msg = `您好，领海品牌管理团队。我们是一家【${cat}】品牌，希望通过【${model}】模式拓展至【${regions}】。`;
     }
 
     const previewEl = document.getElementById('scope-preview');
     if (previewEl) previewEl.textContent = `"${msg}"`;
 
-    const waLink = document.getElementById('dynamic-wa-link');
     const emailLink = document.getElementById('dynamic-email-link');
-
-    if (waLink) waLink.href = `https://wa.me/85200000000?text=${encodeURIComponent(msg)}`;
-    if (emailLink) emailLink.href = `mailto:contact@launchoverseas.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(msg)}`;
+    if (emailLink) emailLink.href = `mailto:info@launchoverseas.com`;
   }
 
   document.addEventListener('DOMContentLoaded', function () {

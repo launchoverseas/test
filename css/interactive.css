@@ -1,6 +1,6 @@
 /* ==========================================================================
    Launch Overseas Limited - Interactive Components & Contact Styles
-   (Buttons, Status Badges, Scoping Generator, Scroll Reveals, Contact Card)
+   (Buttons, Status Badges, Scoping Generator, Scroll Reveals, Contact Card, Form)
    ========================================================================== */
 
 /* Global Buttons & Links */
@@ -141,7 +141,7 @@
   line-height: 1.6;
 }
 
-/* Interactive Go-Global Scoping Widget */
+/* Interactive Go-Global Scoping & Form Widget */
 .scoping-widget {
   background-color: var(--bg-canvas);
   border: 1px solid var(--border-stone);
@@ -208,15 +208,93 @@
   box-shadow: 0 2px 8px rgba(27, 86, 199, 0.2);
 }
 
+/* Form Styles */
+.inquiry-form-wrap {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-stone);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-indigo);
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-stone);
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: var(--color-azure);
+  box-shadow: 0 0 0 3px rgba(59, 126, 246, 0.15);
+}
+
+.form-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.form-feedback {
+  font-size: 0.8125rem;
+  color: #DC2626;
+  margin-top: 8px;
+  min-height: 20px;
+}
+
 .scoping-result {
   background-color: var(--bg-surface);
   border: 1px dashed var(--color-azure);
   padding: 16px;
   border-radius: 4px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   color: var(--text-primary);
   font-style: italic;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* Contact Card Module */
@@ -289,9 +367,10 @@
   color: var(--text-primary);
 }
 
+/* Balanced 2-Column Contact Channels Grid */
 .contact-channels {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
 
@@ -299,7 +378,7 @@
   background-color: var(--bg-canvas);
   border: 1px solid var(--border-stone);
   border-radius: 6px;
-  padding: 20px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -320,13 +399,13 @@
 }
 
 .channel-value {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--text-primary);
   word-break: break-all;
 }
 
-.channel-value.email-link, .channel-value.whatsapp-link {
+.channel-value.email-link {
   color: var(--color-indigo);
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -360,6 +439,7 @@
   .faq-grid { grid-template-columns: 1fr; }
   .trust-commitments { grid-template-columns: 1fr; gap: 14px; }
   .contact-channels { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
