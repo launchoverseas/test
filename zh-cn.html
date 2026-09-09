@@ -156,10 +156,6 @@
               <span class="hub-tag">战略核心枢纽</span>
               <span class="hub-location">香港特别行政区</span>
             </div>
-            <div class="status-pill">
-              <span class="dynamic-status-dot status-dot standby"></span>
-              <span class="dynamic-status-text">加载香港总部状态...</span>
-            </div>
           </div>
           
           <div class="matrix-grid">
@@ -631,7 +627,7 @@
             <p class="contact-lead">请在下方选择您的出海需求并填写联络信息，系统将自动向我们的香港专业顾问团队发送出海咨询。</p>
           </div>
 
-          <!-- Interactive Go-Global Scoping Widget -->
+          <!-- Modern Scoping & Form Card -->
           <div class="scoping-widget">
             <div class="scoping-header">
               <h3 class="scoping-title">配置您的出海咨询需求</h3>
@@ -657,7 +653,7 @@
               </div>
             </div>
 
-            <div class="scoping-group" style="margin-bottom: 24px;">
+            <div class="scoping-group">
               <label>3. 目标拓展地区 (可多选)</label>
               <div class="scoping-options" id="scope-regions">
                 <button class="scope-pill active" data-val="北美地区">北美地区</button>
@@ -667,39 +663,36 @@
               </div>
             </div>
 
-            <div class="scoping-result">
-              <p id="scope-preview">"您好，领海品牌管理团队。我们是一家【美妆护肤】品牌，希望通过【全流程托管】模式拓展至【北美地区】。"</p>
-            </div>
-
-            <!-- Direct Dynamic Inquiry Form -->
-            <div class="inquiry-form-wrap">
+            <!-- Modern Form Presentation Card -->
+            <div class="modern-form-card">
               <form id="enquiry-form" novalidate>
                 <input type="text" name="company_verify" id="hp-company-verify" class="honeypot-field" tabindex="-1" autocomplete="off">
 
-                <div class="form-row">
+                <div class="form-grid-2">
                   <div class="form-field">
-                    <label for="field-name">联系人姓名 *</label>
+                    <label class="form-label" for="field-name">联系人姓名 <span class="required-mark">*</span></label>
                     <input type="text" id="field-name" class="form-input" placeholder="例如：陈经理" required>
                   </div>
                   <div class="form-field">
-                    <label for="field-email">企业工作邮箱 *</label>
+                    <label class="form-label" for="field-email">企业工作邮箱 <span class="required-mark">*</span></label>
                     <input type="email" id="field-email" class="form-input" placeholder="name@company.com" required>
-                  </div>
-                  <div class="form-field">
-                    <label for="field-company">公司 / 品牌名称</label>
-                    <input type="text" id="field-company" class="form-input" placeholder="例如：领先消费品有限公司">
                   </div>
                 </div>
 
-                <div class="form-field" style="margin-bottom: 8px;">
-                  <label for="field-brief">出海需求与备注 (选填)</label>
+                <div class="form-field">
+                  <label class="form-label" for="field-company">公司 / 品牌名称</label>
+                  <input type="text" id="field-company" class="form-input" placeholder="例如：领先消费品有限公司">
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="field-brief">出海需求与备注 (选填)</label>
                   <textarea id="field-brief" class="form-textarea" placeholder="请简要描述您的主推产品、目标拓展进度或期望进驻渠道..."></textarea>
                 </div>
 
                 <div class="form-actions">
                   <button type="submit" class="btn btn-primary" id="submit-enquiry-btn">发送商业咨询</button>
-                  <button type="button" class="btn copy-btn" id="fallback-copy-btn" aria-label="复制咨询内容">
-                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <button type="button" class="btn btn-secondary copy-btn" id="fallback-copy-btn" aria-label="复制咨询内容">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                     <span>复制咨询内容 (网页邮箱备用)</span>
                   </button>
                 </div>
@@ -723,24 +716,17 @@
             </div>
           </div>
 
-          <!-- Clean 2-Column Contact Grid -->
-          <div class="contact-channels">
-            <div class="channel-box">
-              <span class="channel-label">官方咨询与商务对接邮箱</span>
-              <a href="mailto:info@launchoverseas.com" id="dynamic-email-link" class="channel-value email-link">info@launchoverseas.com</a>
+          <!-- Single Centered Corporate Contact Card -->
+          <div class="contact-channels-single">
+            <div class="single-channel-box">
+              <div class="channel-info">
+                <span class="channel-label">官方咨询与商务对接邮箱</span>
+                <a href="mailto:info@launchoverseas.com" id="dynamic-email-link" class="channel-value email-link">info@launchoverseas.com</a>
+              </div>
               <button class="copy-btn" data-copy="info@launchoverseas.com" aria-label="复制电子邮箱">
-                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 <span>复制邮箱</span>
               </button>
-            </div>
-
-            <div class="channel-box">
-              <span class="channel-label">实时咨询受理</span>
-              <div class="status-pill" style="margin-top: 4px;">
-                <span class="dynamic-status-dot status-dot standby"></span>
-                <span class="dynamic-status-text" style="font-weight: 600; color: var(--text-primary);">加载状态...</span>
-              </div>
-              <span class="channel-value static-time" style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 4px;">周一至周五, 09:00–18:00 HKT</span>
             </div>
           </div>
         </div>

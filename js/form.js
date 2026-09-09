@@ -1,7 +1,7 @@
 /**
  * Launch Overseas Limited - Client-Side Inquiry Form Controller
  * Features: Honeypot anti-spam, multi-locale payload construction, mailto generation, and copy fallback.
- * Compliance: Strictly under 300 lines (Total Lines: 118)
+ * Compliance: Strictly under 300 lines (Total Lines: 109)
  */
 
 (function () {
@@ -38,12 +38,12 @@
 
     if (lang.includes('zh-hk')) {
       subject = `【出海諮詢】${company ? company + ' - ' : ''}${name}`;
-      body = `聯絡人姓名: ${name}\n公司/品牌名稱: ${company}\n聯絡人郵箱: ${email}\n\n[拓展參數]\n目標品類: ${scope.cat}\n期望合作模式: ${scope.model}\n目標市場: ${scope.regions}\n\n[項目補充需求]\n${brief || '無補充'}`;
+      body = `聯絡人姓名: ${name}\n公司/品牌名稱: ${company}\n聯絡人郵箱: ${email}\n\n[拓展規劃]\n目標品類: ${scope.cat}\n期望合作模式: ${scope.model}\n目標拓展市場: ${scope.regions}\n\n[項目備註需求]\n${brief || '無補充備註'}`;
     } else if (lang.includes('zh-cn') || lang.includes('zh-hans')) {
       subject = `【出海咨询】${company ? company + ' - ' : ''}${name}`;
-      body = `联系人姓名: ${name}\n公司/品牌名称: ${company}\n联系人邮箱: ${email}\n\n[拓展参数]\n目标品类: ${scope.cat}\n期望合作模式: ${scope.model}\n目标市场: ${scope.regions}\n\n[项目补充需求]\n${brief || '无补充'}`;
+      body = `联系人姓名: ${name}\n公司/品牌名称: ${company}\n联系人邮箱: ${email}\n\n[拓展规划]\n目标品类: ${scope.cat}\n期望合作模式: ${scope.model}\n目标拓展市场: ${scope.regions}\n\n[项目备注需求]\n${brief || '无补充备注'}`;
     } else {
-      body = `Contact Name: ${name}\nCompany / Brand: ${company}\nWork Email: ${email}\n\n[Scope Parameters]\nIndustry: ${scope.cat}\nEngagement Model: ${scope.model}\nTarget Territories: ${scope.regions}\n\n[Project Brief / Notes]\n${brief || 'N/A'}`;
+      body = `Contact Name: ${name}\nCompany / Brand: ${company}\nWork Email: ${email}\n\n[Scope Parameters]\nIndustry: ${scope.cat}\nEngagement Model: ${scope.model}\nTarget Territories: ${scope.regions}\n\n[Project Brief]\n${brief || 'N/A'}`;
     }
 
     return { subject, body };
@@ -52,10 +52,9 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // Honeypot check for bots
     const honeypot = document.getElementById('hp-company-verify');
     if (honeypot && honeypot.value) {
-      if (feedbackEl) feedbackEl.textContent = 'Spam submission detected.';
+      if (feedbackEl) feedbackEl.textContent = 'Spam verification triggered.';
       return;
     }
 
@@ -65,7 +64,7 @@
     if (!name || !email) {
       if (feedbackEl) {
         const lang = document.documentElement.lang.toLowerCase();
-        feedbackEl.textContent = lang.includes('zh') ? '請填寫姓名與公司郵箱。' : 'Please provide your name and work email.';
+        feedbackEl.textContent = lang.includes('zh') ? '請完整填寫聯絡人姓名與公司工作郵箱。' : 'Please provide your name and corporate work email.';
       }
       return;
     }
@@ -102,11 +101,11 @@
         if (span) {
           const original = span.textContent;
           const lang = document.documentElement.lang.toLowerCase();
-          span.textContent = lang.includes('zh') ? '已複製諮詢內容' : 'Inquiry Copied';
+          span.textContent = lang.includes('zh') ? '已複製至剪貼簿' : 'Copied to Clipboard';
           setTimeout(() => { span.textContent = original; }, 2500);
         }
       } catch (err) {
-        if (feedbackEl) feedbackEl.textContent = 'Could not copy automatically. Please use mailto link.';
+        if (feedbackEl) feedbackEl.textContent = 'Unable to copy. Please click Send directly.';
       }
     });
   }

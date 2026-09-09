@@ -1,7 +1,7 @@
 /**
  * Launch Overseas Limited - Client-Side Controller
- * Features: Mobile drawer, partnership tabs, dynamic HKT status, scroll reveals, copy feedback, scoping preview.
- * Compliance: Strictly under 300 lines (Total Lines: 214)
+ * Features: Mobile drawer, partnership tabs, scroll reveals, click-to-copy buttons, scoping pills.
+ * Compliance: Strictly under 300 lines (Total Lines: 175)
  */
 
 (function () {
@@ -10,7 +10,7 @@
   const mobileToggle = document.getElementById('mobile-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileLinks = document.querySelectorAll('.mobile-link');
-  const copyButtons = document.querySelectorAll('.copy-btn');
+  const copyButtons = document.querySelectorAll('.copy-btn:not(#fallback-copy-btn)');
   const tabButtons = document.querySelectorAll('.model-tab-btn');
   const modelPanels = document.querySelectorAll('.model-panel');
 
@@ -120,34 +120,6 @@
     }, 2000);
   }
 
-  function initLiveHktStatus() {
-    const statusDots = document.querySelectorAll('.dynamic-status-dot');
-    const statusTexts = document.querySelectorAll('.dynamic-status-text');
-    if (statusDots.length === 0 && statusTexts.length === 0) return;
-
-    const lang = document.documentElement.lang.toLowerCase();
-    const now = new Date();
-    const utcHours = now.getUTCHours();
-    const hktHours = (utcHours + 8) % 24;
-    const hktDay = (now.getUTCDay() + (utcHours + 8 >= 24 ? 1 : 0)) % 7;
-    const isWeekday = hktDay >= 1 && hktDay <= 5;
-    const isOpen = isWeekday && hktHours >= 9 && hktHours < 18;
-
-    let text = isOpen ? 'Advisory Desk Live (HKT)' : '24h Inquiry Intake Active (HKT)';
-    if (lang.includes('zh-hk')) {
-      text = isOpen ? '顧問團隊在線 (HKT)' : '24小時諮詢受理中 (HKT)';
-    } else if (lang.includes('zh-cn') || lang.includes('zh-hans')) {
-      text = isOpen ? '顾问团队在线 (HKT)' : '24小时咨询受理中 (HKT)';
-    }
-
-    statusDots.forEach(function (dot) {
-      dot.className = isOpen ? 'status-dot pulse' : 'status-dot standby';
-    });
-    statusTexts.forEach(function (el) {
-      el.textContent = text;
-    });
-  }
-
   function initScrollReveals() {
     const reveals = document.querySelectorAll('.reveal-on-scroll');
     if (reveals.length === 0) return;
@@ -169,7 +141,7 @@
     reveals.forEach(el => observer.observe(el));
   }
 
-  function initScopeGenerator() {
+  function initScopePills() {
     const scopePills = document.querySelectorAll('.scope-pill');
     if (scopePills.length === 0) return;
 
@@ -184,46 +156,15 @@
         } else {
           pill.classList.toggle('active');
         }
-        updateScopePreview();
       });
     });
-
-    updateScopePreview();
-  }
-
-  function updateScopePreview() {
-    const lang = document.documentElement.lang.toLowerCase();
-    const catNode = document.querySelector('#scope-category .active');
-    const modelNode = document.querySelector('#scope-model .active');
-    const regionNodes = document.querySelectorAll('#scope-regions .active');
-
-    const cat = catNode ? catNode.getAttribute('data-val') : '';
-    const model = modelNode ? modelNode.getAttribute('data-val') : '';
-    let regions = Array.from(regionNodes).map(b => b.getAttribute('data-val')).join(', ');
-
-    if (!regions) regions = (lang.includes('zh') ? '全球市場' : 'Global Markets');
-
-    let msg = `Hello Launch Overseas team, we are a [${cat}] brand looking to expand into [${regions}] via the [${model}] model.`;
-
-    if (lang.includes('zh-hk')) {
-      msg = `您好，領海品牌管理團隊。我們是一家【${cat}】品牌，希望透過【${model}】模式拓展至【${regions}】。`;
-    } else if (lang.includes('zh-cn') || lang.includes('zh-hans')) {
-      msg = `您好，领海品牌管理团队。我们是一家【${cat}】品牌，希望通过【${model}】模式拓展至【${regions}】。`;
-    }
-
-    const previewEl = document.getElementById('scope-preview');
-    if (previewEl) previewEl.textContent = `"${msg}"`;
-
-    const emailLink = document.getElementById('dynamic-email-link');
-    if (emailLink) emailLink.href = `mailto:info@launchoverseas.com`;
   }
 
   document.addEventListener('DOMContentLoaded', function () {
     initMobileMenu();
     initModelSwitcher();
     initClipboardButtons();
-    initLiveHktStatus();
     initScrollReveals();
-    initScopeGenerator();
+    initScopePills();
   });
 })();

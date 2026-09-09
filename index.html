@@ -156,10 +156,6 @@
               <span class="hub-tag">Strategic Gateway</span>
               <span class="hub-location">Hong Kong SAR</span>
             </div>
-            <div class="status-pill">
-              <span class="dynamic-status-dot status-dot standby"></span>
-              <span class="dynamic-status-text">Checking HKT Desk...</span>
-            </div>
           </div>
           
           <div class="matrix-grid">
@@ -661,10 +657,10 @@
           <div class="contact-header">
             <div class="meta-tag">Direct Corporate Gateway</div>
             <h2 class="contact-title">Initiate an Enterprise Partnership</h2>
-            <p class="contact-lead">Select your expansion parameters and provide your details below to dispatch a direct commercial inquiry to our advisory desk.</p>
+            <p class="contact-lead">Select your expansion parameters and fill in your details below to dispatch a formal commercial inquiry directly to our advisory team.</p>
           </div>
 
-          <!-- Interactive Go-Global Scoping & Form Widget -->
+          <!-- Modern Scoping & Form Card -->
           <div class="scoping-widget">
             <div class="scoping-header">
               <h3 class="scoping-title">Configure Your Expansion Scope</h3>
@@ -690,7 +686,7 @@
               </div>
             </div>
 
-            <div class="scoping-group" style="margin-bottom: 24px;">
+            <div class="scoping-group">
               <label>3. Target Expansion Territories (Multi-select)</label>
               <div class="scoping-options" id="scope-regions">
                 <button class="scope-pill active" data-val="North America">North America</button>
@@ -700,40 +696,37 @@
               </div>
             </div>
 
-            <div class="scoping-result">
-              <p id="scope-preview">"Hello Launch Overseas team, we are a Beauty & Personal Care brand looking to expand into North America via the Turnkey Incubation model."</p>
-            </div>
-
-            <!-- Direct Dynamic Inquiry Form -->
-            <div class="inquiry-form-wrap">
+            <!-- Modern Form Presentation Card -->
+            <div class="modern-form-card">
               <form id="enquiry-form" novalidate>
-                <!-- Honeypot field for bot protection -->
+                <!-- Honeypot anti-spam trap -->
                 <input type="text" name="company_verify" id="hp-company-verify" class="honeypot-field" tabindex="-1" autocomplete="off">
 
-                <div class="form-row">
+                <div class="form-grid-2">
                   <div class="form-field">
-                    <label for="field-name">Your Name *</label>
+                    <label class="form-label" for="field-name">Your Full Name <span class="required-mark">*</span></label>
                     <input type="text" id="field-name" class="form-input" placeholder="e.g. Alexander Wright" required>
                   </div>
                   <div class="form-field">
-                    <label for="field-email">Corporate Work Email *</label>
-                    <input type="email" id="field-email" class="form-input" placeholder="e.g. name@brand.com" required>
-                  </div>
-                  <div class="form-field">
-                    <label for="field-company">Company / Brand Name</label>
-                    <input type="text" id="field-company" class="form-input" placeholder="e.g. Apex Consumer Inc.">
+                    <label class="form-label" for="field-email">Corporate Work Email <span class="required-mark">*</span></label>
+                    <input type="email" id="field-email" class="form-input" placeholder="name@brand.com" required>
                   </div>
                 </div>
 
-                <div class="form-field" style="margin-bottom: 8px;">
-                  <label for="field-brief">Expansion Objectives / Brief (Optional)</label>
-                  <textarea id="field-brief" class="form-textarea" placeholder="Briefly outline your product line, target markets, or launch timeline..."></textarea>
+                <div class="form-field">
+                  <label class="form-label" for="field-company">Company / Brand Name</label>
+                  <input type="text" id="field-company" class="form-input" placeholder="e.g. Apex Consumer Goods Ltd.">
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="field-brief">Project Brief & Objectives (Optional)</label>
+                  <textarea id="field-brief" class="form-textarea" placeholder="Briefly outline your product portfolio, target timeline, or distribution preferences..."></textarea>
                 </div>
 
                 <div class="form-actions">
                   <button type="submit" class="btn btn-primary" id="submit-enquiry-btn">Send Commercial Inquiry</button>
-                  <button type="button" class="btn copy-btn" id="fallback-copy-btn" aria-label="Copy Inquiry Text for Webmail">
-                    <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <button type="button" class="btn btn-secondary copy-btn" id="fallback-copy-btn" aria-label="Copy Inquiry Text for Webmail">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                     <span>Copy Inquiry Text (Webmail)</span>
                   </button>
                 </div>
@@ -757,24 +750,17 @@
             </div>
           </div>
 
-          <!-- Clean 2-Column Contact Grid -->
-          <div class="contact-channels">
-            <div class="channel-box">
-              <span class="channel-label">Official Inquiries & Proposals</span>
-              <a href="mailto:info@launchoverseas.com" id="dynamic-email-link" class="channel-value email-link">info@launchoverseas.com</a>
+          <!-- Single Centered Corporate Contact Card -->
+          <div class="contact-channels-single">
+            <div class="single-channel-box">
+              <div class="channel-info">
+                <span class="channel-label">Official Inquiries & Commercial Proposals</span>
+                <a href="mailto:info@launchoverseas.com" id="dynamic-email-link" class="channel-value email-link">info@launchoverseas.com</a>
+              </div>
               <button class="copy-btn" data-copy="info@launchoverseas.com" aria-label="Copy official email address">
-                <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 <span>Copy Email</span>
               </button>
-            </div>
-
-            <div class="channel-box">
-              <span class="channel-label">Live Advisory Desk</span>
-              <div class="status-pill" style="margin-top: 4px;">
-                <span class="dynamic-status-dot status-dot standby"></span>
-                <span class="dynamic-status-text" style="font-weight: 600; color: var(--text-primary);">Checking HKT Desk...</span>
-              </div>
-              <span class="channel-value static-time" style="font-size: 0.8125rem; color: var(--text-secondary); margin-top: 4px;">Mon–Fri, 09:00–18:00 HKT (UTC+8)</span>
             </div>
           </div>
         </div>
