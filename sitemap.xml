@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English Homepage -->
+  <url>
+    <loc>https://launchoverseas.com/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/"/>
+  </url>
+
+  <!-- Traditional Chinese Portal -->
+  <url>
+    <loc>https://launchoverseas.com/zh-hk.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/"/>
+  </url>
+
+  <!-- Simplified Chinese Portal -->
+  <url>
+    <loc>https://launchoverseas.com/zh-cn.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/"/>
+  </url>
+
+  <!-- Privacy Policy (English) -->
+  <url>
+    <loc>https://launchoverseas.com/privacy.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/privacy-zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/privacy-zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/privacy.html"/>
+  </url>
+
+  <!-- Privacy Policy (Traditional Chinese) -->
+  <url>
+    <loc>https://launchoverseas.com/privacy-zh-hk.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/privacy-zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/privacy-zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/privacy.html"/>
+  </url>
+
+  <!-- Privacy Policy (Simplified Chinese) -->
+  <url>
+    <loc>https://launchoverseas.com/privacy-zh-cn.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/privacy-zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/privacy-zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/privacy.html"/>
+  </url>
+
+  <!-- Terms of Service (English) -->
+  <url>
+    <loc>https://launchoverseas.com/terms.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/terms-zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/terms-zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/terms.html"/>
+  </url>
+
+  <!-- Terms of Service (Traditional Chinese) -->
+  <url>
+    <loc>https://launchoverseas.com/terms-zh-hk.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/terms-zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/terms-zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/terms.html"/>
+  </url>
+
+  <!-- Terms of Service (Simplified Chinese) -->
+  <url>
+    <loc>https://launchoverseas.com/terms-zh-cn.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://launchoverseas.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-HK" href="https://launchoverseas.com/terms-zh-hk.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://launchoverseas.com/terms-zh-cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://launchoverseas.com/terms.html"/>
+  </url>
+</urlset>

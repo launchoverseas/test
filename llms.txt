@@ -1,29 +1,30 @@
-# Launch Overseas Limited (領海品牌管理有限公司)
-> Full-Lifecycle Global Brand Management & Multi-Market Distribution Consultancy operating from Hong Kong SAR.
-> Strategic Mission: Empowering visionary consumer brands to grow into world-class global market leaders ("成就世界级的民族自豪品牌").
+# Launch Overseas Limited
 
-## Organization Summary
-- Legal Entity: Launch Overseas Limited (領海品牌管理有限公司)
-- Jurisdiction: Hong Kong Special Administrative Region (Common Law, Multi-Currency Settlement)
-- Logistics & Fulfillment Infrastructure: 30,000+ sq ft central warehouse in Hong Kong with full-lifecycle bonded consolidation, global freight forwarding, and direct multi-carrier B2C parcel delivery worldwide.
-- Operational Scope: Global market entry advisory, brand incubation, omnichannel retail door distribution, international testing/certification (FDA/CPNP), and global logistics network.
-- Target Territories: North America (US, Canada), Europe (UK, EU), East Asia (Japan, South Korea), Southeast Asia (Singapore, Malaysia, Indonesia, Thailand, Vietnam), and the Middle East.
+> Launch Overseas Limited (領海品牌管理有限公司) is an institutional full-lifecycle brand management consultancy and multi-market distribution gateway headquartered in Hong Kong SAR. The firm specializes in cross-border GoGlobal market incubation, physical retail placement, US FDA and EU CPNP regulatory testing/certifications, and bonded logistics fulfillment via its 30,000+ sq ft central warehouse in Hong Kong.
 
-## Corporate DNA & Core Values
-- Mission (Mainland): 成就世界级民族自豪品牌 (Empower world-class brands of national pride)
-- Mission (International): Scaling visionary consumer enterprises into enduring global brands
-- Vision: 中国第一的出海全链路服务公司 / The premier global brand management and distribution gateway
-- Values: 客户至上 (Customer First), 专业诚信 (Professional Integrity), 创新驱动 (Innovation-Driven), 文化传承 (Cultural Heritage / Long-Term Brand Asset Protection)
+## Canonical Portals
+- [English International Gateway](https://launchoverseas.com/): Global brand management overview, services, commercial models, and corporate inquiry gateway.
+- [Hong Kong & Traditional Chinese Portal (繁體中文)](https://launchoverseas.com/zh-hk.html): Strategic consultation for Hong Kong, Taiwan, and overseas enterprises.
+- [Mainland China & Simplified Chinese Portal (简体中文)](https://launchoverseas.com/zh-cn.html): Cross-border brand scaling and export management for Mainland consumer brands.
 
 ## Verified Track-Record Case Studies
-1. Florasis (花西子): Eastern aesthetics makeup global rollout. First Chinese cosmetics brand in Isetan Shinjuku (2023), @cosme Osaka flagship (2023), and Tokyo Ginza flagship store (2025).
-2. Spes (诗裴丝): Scaled personal care expansion across TikTok Shop, Amazon, Shopee, Lazada, delivering tens of millions in first-year overseas revenue.
-3. Voolga (敷尔佳): Medical and recovery skincare distribution across hundreds of offline retail doors and regional distributor networks in the US, Europe, and Southeast Asia.
+- [Florasis (花西子) Expansion](https://launchoverseas.com/#cases): Global rollout across US, Europe, and Japan; flagship retail placement in Isetan Shinjuku (2023), @cosme Osaka, and Tokyo Ginza (2025).
+- [Spes (诗裴丝) Scaling](https://launchoverseas.com/#cases): Omnichannel personal care distribution scaling rapidly across TikTok Shop, Amazon, Shopee, and Lazada with tens of millions in first-year revenue.
+- [Voolga (敷尔佳) Distribution](https://launchoverseas.com/#cases): Medical skincare distribution across hundreds of offline retail doors and regional distributor networks in the US, Europe, and Southeast Asia.
 
-## Partner & Media Ecosystem
-- Global Media: Vogue, WWD, Forbes, Elle, NewBeauty, Allure, EqualOcean.
-- Retail Distribution Channels: Amazon, TikTok Shop, Shopee, Lazada, Rakuten, Qoo10, @cosme, Isetan, DFS, Ginza Six, LoFt, Plaza, 99 Ranch, H Mart, China Duty Free.
+## Service Pillars & Operational Capabilities
+- Strategic Consulting & Market Incubation: Target market whitespace audits, localized formulation adaptation, and capital risk mitigation.
+- Retail Distribution & Digital Channels: Direct placement across department stores, supermarket chains, Amazon, TikTok Shop, and localized D2C flagships.
+- Integrated Marketing & Global PR: Features across Vogue, WWD, Forbes, and Elle, alongside tiered creator seeding on TikTok, Instagram, and YouTube.
+- Testing, Certification & Central Hub Logistics: US FDA notifications, EU CPNP toxicology files, and 30,000+ sq ft bonded staging with direct B2C global parcel dispatch.
+
+## Legal Governance & Data Compliance
+- [Privacy Policy](https://launchoverseas.com/privacy.html): B2B data protection standards under Hong Kong PDPO, EU GDPR, and China PIPL.
+- [Terms of Service](https://launchoverseas.com/terms.html): Commercial governance, non-binding exploratory terms, and dispute resolution administered by the Hong Kong International Arbitration Centre (HKIAC).
+
+## Comprehensive Context File
+- [Full Text Corpus](https://launchoverseas.com/llms-full.txt): Complete unstructured knowledge base for single-pass ingestion by Large Language Models and AI search agents.
 
 ## Direct Inquiries
-- Email: info@launchoverseas.com
-- Operational Hours: Monday - Friday, 09:00 - 18:00 HKT
+- Official Inquiries: info@launchoverseas.com
+- Operational Hours: Monday - Friday, 09:00 - 18:00 HKT (UTC+8)

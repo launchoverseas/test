@@ -78,6 +78,10 @@ The platform aligns with official Hong Kong Trade Development Council (HKTDC) Go
 ## Project Updates & History Log
 
 - Date: 2026-09-09
+- Feature Added: Generative Engine Optimization (GEO) Overhaul, llms-full.txt Corpus, Multi-Entity Schema.org Graph & Extended FAQ
+- Architecture Notes: Restructured llms.txt to comply strictly with the official specification using Markdown hyperlinks across all three primary languages. Created a dedicated llms-full.txt file at the root containing the complete corporate corpus for single-pass LLM ingestion. Expanded the homepage FAQ modules to 4 comprehensive questions across index.html, zh-hk.html, and zh-cn.html, pairing them with an integrated Schema.org JSON-LD @graph combining Corporation, WebSite, and FAQPage entities. Published an updated sitemap.xml with reciprocal xhtml:link hreflang annotations for all 9 pages, and hardened robots.txt with explicit allowances for GPTBot, ClaudeBot, PerplexityBot, and Google-Extended.
+
+- Date: 2026-09-09
 - Feature Added: WhatsApp Removal, Official Email Migration (info@launchoverseas.com) & Integrated Inquiry Form
 - Architecture Notes: Fully removed all WhatsApp references and dynamic click-to-chat links across the entire repository. Migrated corporate contact points to info@launchoverseas.com across all 9 HTML entry points, JSON-LD schemas, and llms.txt. Deployed an integrated commercial inquiry form within the scoping module with honeypot anti-spam defense, structured mailto transmission, and an instant webmail copy fallback. Isolated form submission logic in js/form.js (118 lines) while keeping js/app.js (214 lines) strictly compliant with the 300-line ceiling.
 

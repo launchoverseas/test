@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/interactive.css">
 
-  <!-- Schema.org JSON-LD -->
+  <!-- Schema.org Multi-Entity JSON-LD Graph -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,6 +37,7 @@
         "name": "領海品牌管理有限公司",
         "alternateName": ["Launch Overseas Limited", "领海品牌管理有限公司"],
         "url": "https://launchoverseas.com/zh-hk.html",
+        "logo": "https://launchoverseas.com/images/logo.svg",
         "description": "立足香港特別行政區的全球品牌管理與跨國分銷諮詢機構。",
         "knowsAbout": [
           "企業出海專業服務",
@@ -57,6 +58,54 @@
           "email": "info@launchoverseas.com",
           "availableLanguage": ["zh-Hant", "en", "zh-Hans"]
         }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://launchoverseas.com/zh-hk.html#website",
+        "url": "https://launchoverseas.com/zh-hk.html",
+        "name": "領海品牌管理有限公司",
+        "publisher": {
+          "@id": "https://launchoverseas.com/zh-hk.html#corporation"
+        },
+        "inLanguage": "zh-HK"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://launchoverseas.com/zh-hk.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "領海品牌管理主要覆蓋哪些國際目標市場？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "領海品牌管理的運營網絡覆蓋北美地區（美國、加拿大）、歐洲地區（英國、歐盟成員國）、東亞地區（日本、韓國）、東南亞核心市場（新加坡、馬來西亞、印尼、泰國、越南）及中東重點市場。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "領海品牌管理如何協助品牌處理海外產品合規與認證？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "我們在產品發運前全流程辦理美國 FDA 備案、歐盟 CPNP 註冊、成分安全性測試檢驗、實驗室毒理評估以及符合目標國法律規定的本土化包裝標籤審核。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "領海品牌管理提供哪些商業合作模式？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "我們提供三種靈活合作架構：全流程品牌託管運營（基礎管理費結合動銷分成）、區域授權分銷代理（批發採購訂單與實體連鎖鋪貨）以及戰略品牌授權（品牌授權金與終端銷售提成）。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "香港中心倉與供應鏈體系如何支持全球履約發貨？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "我們在香港自營管理 30,000+ 呎自由港中心倉，具備保稅中轉、樣品檢驗及直連主流跨境物流平台能力，實現從香港直發全球的高效一件代發。"
+            }
+          }
+        ]
       }
     ]
   }
@@ -595,7 +644,7 @@
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- FAQ Section -->
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="section-header reveal-on-scroll">
@@ -612,6 +661,16 @@
           <div class="faq-item reveal-on-scroll">
             <h3 class="faq-question">領海品牌管理如何協助品牌處理海外產品合規與認證？</h3>
             <p class="faq-answer">我們在產品發運前全流程辦理美國 FDA 備案、歐盟 CPNP 註冊、成分安全性測試檢驗、實驗室毒理評估以及符合目標國法律規定的本土化包裝標籤審核。</p>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <h3 class="faq-question">領海品牌管理提供哪些商業合作模式？</h3>
+            <p class="faq-answer">我們提供三種靈活合作機制：全流程託管運營（基礎管理費結合動銷分成）、區域授權分銷代理（批發採購訂單與實體商超鋪貨）以及戰略品牌授權合作（品牌授權金結合銷售提成）。</p>
+          </div>
+
+          <div class="faq-item reveal-on-scroll">
+            <h3 class="faq-question">香港中心倉與供應鏈體系如何支持全球履約發貨？</h3>
+            <p class="faq-answer">我們在香港自營管理 30,000+ 呎自由港中心倉，具備保稅中轉、樣品檢驗及無縫直連主流跨境物流平台能力，實現從香港直發全球的高效一件代發。</p>
           </div>
         </div>
       </div>

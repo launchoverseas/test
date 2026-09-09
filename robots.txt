@@ -4,4 +4,16 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://launchoverseas.com/sitemap.xml
